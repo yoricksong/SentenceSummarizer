@@ -1,0 +1,172 @@
+
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Newtonsoft.Json</name>
+    </assembly>
+    <members>
+        <member name="T:Newtonsoft.Json.Bson.BsonObjectId">
+            <summary>
+            Represents a BSON Oid (object id).
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonObjectId.Value">
+            <summary>
+            Gets or sets the value of the Oid.
+            </summary>
+            <value>The value of the Oid.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonObjectId.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonObjectId"/> class.
+            </summary>
+            <param name="value">The Oid value.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Bson.BsonReader">
+            <summary>
+            Represents a reader that provides fast, non-cached, forward-only access to serialized JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonReader.JsonNet35BinaryCompatibility">
+            <summary>
+            Gets or sets a value indicating whether binary data reading should compatible with incorrect Json.NET 3.5 written binary.
+            </summary>
+            <value>
+            	<c>true</c> if binary data reading will be compatible with incorrect Json.NET 3.5 written binary; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonReader.ReadRootValueAsArray">
+            <summary>
+            Gets or sets a value indicating whether the root object will be read as a JSON array.
+            </summary>
+            <value>
+            	<c>true</c> if the root object will be read as a JSON array; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonReader.DateTimeKindHandling">
+            <summary>
+            Gets or sets the <see cref="T:System.DateTimeKind" /> used when reading <see cref="T:System.DateTime"/> values from BSON.
+            </summary>
+            <value>The <see cref="T:System.DateTimeKind" /> used when reading <see cref="T:System.DateTime"/> values from BSON.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonReader"/> class.
+            </summary>
+            <param name="stream">The stream.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.#ctor(System.IO.BinaryReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonReader"/> class.
+            </summary>
+            <param name="reader">The reader.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.#ctor(System.IO.Stream,System.Boolean,System.DateTimeKind)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonReader"/> class.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="readRootValueAsArray">if set to <c>true</c> the root object will be read as a JSON array.</param>
+            <param name="dateTimeKindHandling">The <see cref="T:System.DateTimeKind" /> used when reading <see cref="T:System.DateTime"/> values from BSON.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.#ctor(System.IO.BinaryReader,System.Boolean,System.DateTimeKind)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonReader"/> class.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="readRootValueAsArray">if set to <c>true</c> the root object will be read as a JSON array.</param>
+            <param name="dateTimeKindHandling">The <see cref="T:System.DateTimeKind" /> used when reading <see cref="T:System.DateTime"/> values from BSON.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.Read">
+            <summary>
+            Reads the next JSON token from the stream.
+            </summary>
+            <returns>
+            <c>true</c> if the next token was read successfully; <c>false</c> if there are no more tokens to read.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonReader.Close">
+            <summary>
+            Changes the <see cref="T:Newtonsoft.Json.JsonReader.State"/> to Closed.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Bson.BsonWriter">
+            <summary>
+            Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonWriter.DateTimeKindHandling">
+            <summary>
+            Gets or sets the <see cref="T:System.DateTimeKind" /> used when writing <see cref="T:System.DateTime"/> values to BSON.
+            When set to <see cref="F:System.DateTimeKind.Unspecified" /> no conversion will occur.
+            </summary>
+            <value>The <see cref="T:System.DateTimeKind" /> used when writing <see cref="T:System.DateTime"/> values to BSON.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonWriter"/> class.
+            </summary>
+            <param name="stream">The stream.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.#ctor(System.IO.BinaryWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Bson.BsonWriter"/> class.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.Flush">
+            <summary>
+            Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteEnd(Newtonsoft.Json.JsonToken)">
+            <summary>
+            Writes the end.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteComment(System.String)">
+            <summary>
+            Writes out a comment <code>/*...*/</code> containing the specified text.
+            </summary>
+            <param name="text">Text to place inside the comment.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteStartConstructor(System.String)">
+            <summary>
+            Writes the start of a constructor with the given name.
+            </summary>
+            <param name="name">The name of the constructor.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteRaw(System.String)">
+            <summary>
+            Writes raw JSON.
+            </summary>
+            <param name="json">The raw JSON to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteRawValue(System.String)">
+            <summary>
+            Writes raw JSON where a value is expected and updates the writer's state.
+            </summary>
+            <param name="json">The raw JSON to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteStartArray">
+            <summary>
+            Writes the beginning of a JSON array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WriteStartObject">
+            <summary>
+            Writes the beginning of a JSON object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.WritePropertyName(System.String)">
+            <summary>
+            Writes the property name of a name/value pair on a JSON object.
+            </summary>
+            <param name="name">The name of the property.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Bson.BsonWriter.Close">
+            <summary>
+            Closes this stream and the underlying stream.
+            </summary>
+        </member>
