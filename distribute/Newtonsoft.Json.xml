@@ -1951,3 +1951,173 @@
             Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonConverterAttribute"/> class.
             </summary>
             <param name="converterType">Type of the <see cref="T:Newtonsoft.Json.JsonConverter"/>.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonConverterAttribute"/> class.
+            </summary>
+            <param name="converterType">Type of the <see cref="T:Newtonsoft.Json.JsonConverter"/>.</param>
+            <param name="converterParameters">Parameter list to use when constructing the <see cref="T:Newtonsoft.Json.JsonConverter"/>. Can be null.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonConverterCollection">
+            <summary>
+            Represents a collection of <see cref="T:Newtonsoft.Json.JsonConverter"/>.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonDictionaryAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> how to serialize the collection.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonDictionaryAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonDictionaryAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonDictionaryAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonDictionaryAttribute"/> class with the specified container Id.
+            </summary>
+            <param name="id">The container Id.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonException">
+            <summary>
+            The exception thrown when an error occurs during JSON serialization or deserialization.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonException"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonException"/> class
+            with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonException"/> class
+            with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info"/> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult"/> is zero (0). </exception>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonExtensionDataAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> to deserialize properties with no matching class member into the specified collection
+            and write values during serialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonExtensionDataAttribute.WriteData">
+            <summary>
+            Gets or sets a value that indicates whether to write extension data when serializing the object.
+            </summary>
+            <value>
+            	<c>true</c> to write extension data when serializing the object; otherwise, <c>false</c>. The default is <c>true</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonExtensionDataAttribute.ReadData">
+            <summary>
+            Gets or sets a value that indicates whether to read extension data when deserializing the object.
+            </summary>
+            <value>
+            	<c>true</c> to read extension data when deserializing the object; otherwise, <c>false</c>. The default is <c>true</c>.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonExtensionDataAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonExtensionDataAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonIgnoreAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> not to serialize the public field or public read/write property value.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonObjectAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> how to serialize the object.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonObjectAttribute.MemberSerialization">
+            <summary>
+            Gets or sets the member serialization.
+            </summary>
+            <value>The member serialization.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonObjectAttribute.ItemRequired">
+            <summary>
+            Gets or sets a value that indicates whether the object's properties are required.
+            </summary>
+            <value>
+            	A value indicating whether the object's properties are required.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonObjectAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonObjectAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonObjectAttribute.#ctor(Newtonsoft.Json.MemberSerialization)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonObjectAttribute"/> class with the specified member serialization.
+            </summary>
+            <param name="memberSerialization">The member serialization.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonObjectAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonObjectAttribute"/> class with the specified container Id.
+            </summary>
+            <param name="id">The container Id.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonPropertyAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> to always serialize the member with the specified name.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonPropertyAttribute.ItemConverterType">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.JsonConverter"/> used when serializing the property's collection items.
+            </summary>
+            <value>The collection's items <see cref="T:Newtonsoft.Json.JsonConverter"/>.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonPropertyAttribute.ItemConverterParameters">
+            <summary>
+            The parameter list to use when constructing the <see cref="T:Newtonsoft.Json.JsonConverter"/> described by ItemConverterType.
+            If null, the default constructor is used.
+            When non-null, there must be a constructor defined in the <see cref="T:Newtonsoft.Json.JsonConverter"/> that exactly matches the number,
+            order, and type of these parameters.
+            </summary>
+            <example>
+            [JsonProperty(ItemConverterType = typeof(MyContainerConverter), ItemConverterParameters = new object[] { 123, "Four" })]
+            </example>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonPropertyAttribute.NamingStrategyType">
+            <summary>
+            Gets or sets the <see cref="T:System.Type"/> of the <see cref="T:Newtonsoft.Json.Serialization.NamingStrategy"/>.
+            </summary>
+            <value>The <see cref="T:System.Type"/> of the <see cref="T:Newtonsoft.Json.Serialization.NamingStrategy"/>.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonPropertyAttribute.NamingStrategyParameters">
+            <summary>
+            The parameter list to use when constructing the <see cref="T:Newtonsoft.Json.Serialization.NamingStrategy"/> described by NamingStrategyType.  
+            If null, the default constructor is used.
+            When non-null, there must be a constructor defined in the <see cref="T:Newtonsoft.Json.Serialization.NamingStrategy"/> that exactly matches the number,
+            order, and type of these parameters.
+            </summary>
+            <example>
+            [JsonProperty(NamingStrategyType = typeof(MyNamingStrategy), NamingStrategyParameters = new object[] { 123, "Four" })]
+            </example>
+        </member>
