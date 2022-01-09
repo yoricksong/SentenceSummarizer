@@ -6933,3 +6933,200 @@
         <member name="F:Newtonsoft.Json.MissingMemberHandling.Ignore">
             <summary>
             Ignore a missing member and do not attempt to deserialize it.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.MissingMemberHandling.Error">
+            <summary>
+            Throw a <see cref="T:Newtonsoft.Json.JsonSerializationException"/> when a missing member is encountered during deserialization.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.NullValueHandling">
+            <summary>
+            Specifies null value handling options for the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+            <example>
+              <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\SerializationTests.cs" region="ReducingSerializedJsonSizeNullValueHandlingObject" title="NullValueHandling Class" />
+              <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\SerializationTests.cs" region="ReducingSerializedJsonSizeNullValueHandlingExample" title="NullValueHandling Ignore Example" />
+            </example>
+        </member>
+        <member name="F:Newtonsoft.Json.NullValueHandling.Include">
+            <summary>
+            Include null values when serializing and deserializing objects.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.NullValueHandling.Ignore">
+            <summary>
+            Ignore null values when serializing and deserializing objects.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.ObjectCreationHandling">
+            <summary>
+            Specifies how object creation is handled by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ObjectCreationHandling.Auto">
+            <summary>
+            Reuse existing objects, create new objects when needed.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ObjectCreationHandling.Reuse">
+            <summary>
+            Only reuse existing objects.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ObjectCreationHandling.Replace">
+            <summary>
+            Always create new objects.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.PreserveReferencesHandling">
+            <summary>
+            Specifies reference handling options for the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            Note that references cannot be preserved when a value is set via a non-default constructor such as types that implement ISerializable.
+            </summary>
+            <example>
+              <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\SerializationTests.cs" region="PreservingObjectReferencesOn" title="Preserve Object References" />       
+            </example>
+        </member>
+        <member name="F:Newtonsoft.Json.PreserveReferencesHandling.None">
+            <summary>
+            Do not preserve references when serializing types.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.PreserveReferencesHandling.Objects">
+            <summary>
+            Preserve references when serializing into a JSON object structure.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.PreserveReferencesHandling.Arrays">
+            <summary>
+            Preserve references when serializing into a JSON array structure.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.PreserveReferencesHandling.All">
+            <summary>
+            Preserve references when serializing.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.ReferenceLoopHandling">
+            <summary>
+            Specifies reference loop handling options for the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Error">
+            <summary>
+            Throw a <see cref="T:Newtonsoft.Json.JsonSerializationException"/> when a loop is encountered.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Ignore">
+            <summary>
+            Ignore loop references and do not serialize.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.ReferenceLoopHandling.Serialize">
+            <summary>
+            Serialize loop references.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Required">
+            <summary>
+            Indicating whether a property is required.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Required.Default">
+            <summary>
+            The property is not required. The default state.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Required.AllowNull">
+            <summary>
+            The property must be defined in JSON but can be a null value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Required.Always">
+            <summary>
+            The property must be defined in JSON and cannot be a null value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Required.DisallowNull">
+            <summary>
+            The property is not required but it cannot be a null value.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.Extensions">
+            <summary>
+            <para>
+            Contains the JSON schema extension methods.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.Extensions.IsValid(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema)">
+            <summary>
+            <para>
+            Determines whether the <see cref="T:Newtonsoft.Json.Linq.JToken"/> is valid.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+            <param name="source">The source <see cref="T:Newtonsoft.Json.Linq.JToken"/> to test.</param>
+            <param name="schema">The schema to test with.</param>
+            <returns>
+            	<c>true</c> if the specified <see cref="T:Newtonsoft.Json.Linq.JToken"/> is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.Extensions.IsValid(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema,System.Collections.Generic.IList{System.String}@)">
+            <summary>
+            <para>
+            Determines whether the <see cref="T:Newtonsoft.Json.Linq.JToken"/> is valid.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+            <param name="source">The source <see cref="T:Newtonsoft.Json.Linq.JToken"/> to test.</param>
+            <param name="schema">The schema to test with.</param>
+            <param name="errorMessages">When this method returns, contains any error messages generated while validating. </param>
+            <returns>
+            	<c>true</c> if the specified <see cref="T:Newtonsoft.Json.Linq.JToken"/> is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.Extensions.Validate(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema)">
+            <summary>
+            <para>
+            Validates the specified <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+            <param name="source">The source <see cref="T:Newtonsoft.Json.Linq.JToken"/> to test.</param>
+            <param name="schema">The schema to test with.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.Extensions.Validate(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema,Newtonsoft.Json.Schema.ValidationEventHandler)">
+            <summary>
+            <para>
+            Validates the specified <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+            <param name="source">The source <see cref="T:Newtonsoft.Json.Linq.JToken"/> to test.</param>
+            <param name="schema">The schema to test with.</param>
+            <param name="validationEventHandler">The validation event handler.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.JsonSchema">
+            <summary>
+            <para>
+            An in-memory representation of a JSON Schema.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Id">
