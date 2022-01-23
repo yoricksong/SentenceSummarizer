@@ -7488,3 +7488,209 @@
             </summary>
             <param name="type">The type to generate a <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> from.</param>
             <param name="resolver">The <see cref="T:Newtonsoft.Json.Schema.JsonSchemaResolver"/> used to resolve schema references.</param>
+            <param name="rootSchemaNullable">Specify whether the generated root <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> will be nullable.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> generated from the specified type.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.JsonSchemaResolver">
+            <summary>
+            <para>
+            Resolves <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> from an id.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchemaResolver.LoadedSchemas">
+            <summary>
+            Gets or sets the loaded schemas.
+            </summary>
+            <value>The loaded schemas.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.JsonSchemaResolver.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Schema.JsonSchemaResolver"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.JsonSchemaResolver.GetSchema(System.String)">
+            <summary>
+            Gets a <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> for the specified reference.
+            </summary>
+            <param name="reference">The id.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> for the specified reference.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.JsonSchemaType">
+            <summary>
+            <para>
+            The value types allowed by the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.None">
+            <summary>
+            No type specified.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.String">
+            <summary>
+            String type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Float">
+            <summary>
+            Float type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Integer">
+            <summary>
+            Integer type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Boolean">
+            <summary>
+            Boolean type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Object">
+            <summary>
+            Object type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Array">
+            <summary>
+            Array type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Null">
+            <summary>
+            Null type.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.JsonSchemaType.Any">
+            <summary>
+            Any type.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.UndefinedSchemaIdHandling">
+            <summary>
+            <para>
+            Specifies undefined schema Id handling options for the <see cref="T:Newtonsoft.Json.Schema.JsonSchemaGenerator"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.UndefinedSchemaIdHandling.None">
+            <summary>
+            Do not infer a schema Id.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.UndefinedSchemaIdHandling.UseTypeName">
+            <summary>
+            Use the .NET type name as the schema Id.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Schema.UndefinedSchemaIdHandling.UseAssemblyQualifiedName">
+            <summary>
+            Use the assembly qualified .NET type name as the schema Id.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.ValidationEventArgs">
+            <summary>
+            <para>
+            Returns detailed information related to the <see cref="T:Newtonsoft.Json.Schema.ValidationEventHandler"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.ValidationEventArgs.Exception">
+            <summary>
+            Gets the <see cref="T:Newtonsoft.Json.Schema.JsonSchemaException"/> associated with the validation error.
+            </summary>
+            <value>The JsonSchemaException associated with the validation error.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.ValidationEventArgs.Path">
+            <summary>
+            Gets the path of the JSON location where the validation error occurred.
+            </summary>
+            <value>The path of the JSON location where the validation error occurred.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.ValidationEventArgs.Message">
+            <summary>
+            Gets the text description corresponding to the validation error.
+            </summary>
+            <value>The text description.</value>
+        </member>
+        <member name="T:Newtonsoft.Json.Schema.ValidationEventHandler">
+            <summary>
+            <para>
+            Represents the callback method that will handle JSON schema validation events and the <see cref="T:Newtonsoft.Json.Schema.ValidationEventArgs"/>.
+            </para>
+            <note type="caution">
+            JSON Schema validation has been moved to its own package. See <see href="http://www.newtonsoft.com/jsonschema">http://www.newtonsoft.com/jsonschema</see> for more details.
+            </note>
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy">
+            <summary>
+            A snake case naming strategy.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy"/> class.
+            </summary>
+            <param name="processDictionaryKeys">
+            A flag indicating whether dictionary keys should be processed.
+            </param>
+            <param name="overrideSpecifiedNames">
+            A flag indicating whether explicitly specified property names should be processed,
+            e.g. a property name customized with a <see cref="T:Newtonsoft.Json.JsonPropertyAttribute"/>.
+            </param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy.ResolvePropertyName(System.String)">
+            <summary>
+            Resolves the specified property name.
+            </summary>
+            <param name="name">The property name to resolve.</param>
+            <returns>The resolved property name.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy">
+            <summary>
+            A camel case naming strategy.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy"/> class.
+            </summary>
+            <param name="processDictionaryKeys">
+            A flag indicating whether dictionary keys should be processed.
+            </param>
+            <param name="overrideSpecifiedNames">
+            A flag indicating whether explicitly specified property names should be processed,
+            e.g. a property name customized with a <see cref="T:Newtonsoft.Json.JsonPropertyAttribute"/>.
+            </param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.CamelCaseNamingStrategy.ResolvePropertyName(System.String)">
+            <summary>
+            Resolves the specified property name.
+            </summary>
+            <param name="name">The property name to resolve.</param>
+            <returns>The resolved property name.</returns>
