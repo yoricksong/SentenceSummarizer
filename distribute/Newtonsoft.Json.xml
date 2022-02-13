@@ -8256,3 +8256,223 @@
         </member>
         <member name="P:Newtonsoft.Json.Serialization.JsonArrayContract.OverrideCreator">
             <summary>
+            Gets or sets the function used to create the object. When set this function will override <see cref="P:Newtonsoft.Json.Serialization.JsonContract.DefaultCreator"/>.
+            </summary>
+            <value>The function used to create the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonArrayContract.HasParameterizedCreator">
+            <summary>
+            Gets a value indicating whether the creator has a parameter with the collection values.
+            </summary>
+            <value><c>true</c> if the creator has a parameter with the collection values; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonArrayContract.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.JsonArrayContract"/> class.
+            </summary>
+            <param name="underlyingType">The underlying type for the contract.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.JsonContainerContract">
+            <summary>
+            Contract details for a <see cref="T:System.Type"/> used by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContainerContract.ItemConverter">
+            <summary>
+            Gets or sets the default collection items <see cref="T:Newtonsoft.Json.JsonConverter" />.
+            </summary>
+            <value>The converter.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContainerContract.ItemIsReference">
+            <summary>
+            Gets or sets a value indicating whether the collection items preserve object references.
+            </summary>
+            <value><c>true</c> if collection items preserve object references; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContainerContract.ItemReferenceLoopHandling">
+            <summary>
+            Gets or sets the collection item reference loop handling.
+            </summary>
+            <value>The reference loop handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContainerContract.ItemTypeNameHandling">
+            <summary>
+            Gets or sets the collection item type name handling.
+            </summary>
+            <value>The type name handling.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonContainerContract.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.JsonContainerContract"/> class.
+            </summary>
+            <param name="underlyingType">The underlying type for the contract.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.SerializationCallback">
+            <summary>
+            Handles <see cref="T:Newtonsoft.Json.JsonSerializer"/> serialization callback events.
+            </summary>
+            <param name="o">The object that raised the callback event.</param>
+            <param name="context">The streaming context.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.SerializationErrorCallback">
+            <summary>
+            Handles <see cref="T:Newtonsoft.Json.JsonSerializer"/> serialization error callback events.
+            </summary>
+            <param name="o">The object that raised the callback event.</param>
+            <param name="context">The streaming context.</param>
+            <param name="errorContext">The error context.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ExtensionDataSetter">
+            <summary>
+            Sets extension data for an object during deserialization.
+            </summary>
+            <param name="o">The object to set extension data on.</param>
+            <param name="key">The extension data key.</param>
+            <param name="value">The extension data value.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ExtensionDataGetter">
+            <summary>
+            Gets extension data for an object during serialization.
+            </summary>
+            <param name="o">The object to set extension data on.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.JsonContract">
+            <summary>
+            Contract details for a <see cref="T:System.Type"/> used by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.UnderlyingType">
+            <summary>
+            Gets the underlying type for the contract.
+            </summary>
+            <value>The underlying type for the contract.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.CreatedType">
+            <summary>
+            Gets or sets the type created during deserialization.
+            </summary>
+            <value>The type created during deserialization.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.IsReference">
+            <summary>
+            Gets or sets whether this type contract is serialized as a reference.
+            </summary>
+            <value>Whether this type contract is serialized as a reference.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.Converter">
+            <summary>
+            Gets or sets the default <see cref="T:Newtonsoft.Json.JsonConverter" /> for this contract.
+            </summary>
+            <value>The converter.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnDeserializedCallbacks">
+            <summary>
+            Gets or sets all methods called immediately after deserialization of the object.
+            </summary>
+            <value>The methods called immediately after deserialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnDeserializingCallbacks">
+            <summary>
+            Gets or sets all methods called during deserialization of the object.
+            </summary>
+            <value>The methods called during deserialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnSerializedCallbacks">
+            <summary>
+            Gets or sets all methods called after serialization of the object graph.
+            </summary>
+            <value>The methods called after serialization of the object graph.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnSerializingCallbacks">
+            <summary>
+            Gets or sets all methods called before serialization of the object.
+            </summary>
+            <value>The methods called before serialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnErrorCallbacks">
+            <summary>
+            Gets or sets all method called when an error is thrown during the serialization of the object.
+            </summary>
+            <value>The methods called when an error is thrown during the serialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnDeserialized">
+            <summary>
+            Gets or sets the method called immediately after deserialization of the object.
+            </summary>
+            <value>The method called immediately after deserialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnDeserializing">
+            <summary>
+            Gets or sets the method called during deserialization of the object.
+            </summary>
+            <value>The method called during deserialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnSerialized">
+            <summary>
+            Gets or sets the method called after serialization of the object graph.
+            </summary>
+            <value>The method called after serialization of the object graph.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnSerializing">
+            <summary>
+            Gets or sets the method called before serialization of the object.
+            </summary>
+            <value>The method called before serialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.OnError">
+            <summary>
+            Gets or sets the method called when an error is thrown during the serialization of the object.
+            </summary>
+            <value>The method called when an error is thrown during the serialization of the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.DefaultCreator">
+            <summary>
+            Gets or sets the default creator method used to create the object.
+            </summary>
+            <value>The default creator method used to create the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonContract.DefaultCreatorNonPublic">
+            <summary>
+            Gets or sets a value indicating whether the default creator is non public.
+            </summary>
+            <value><c>true</c> if the default object creator is non-public; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.JsonDictionaryContract">
+            <summary>
+            Contract details for a <see cref="T:System.Type"/> used by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.PropertyNameResolver">
+            <summary>
+            Gets or sets the property name resolver.
+            </summary>
+            <value>The property name resolver.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.DictionaryKeyResolver">
+            <summary>
+            Gets or sets the dictionary key resolver.
+            </summary>
+            <value>The dictionary key resolver.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.DictionaryKeyType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of the dictionary keys.
+            </summary>
+            <value>The <see cref="T:System.Type"/> of the dictionary keys.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.DictionaryValueType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of the dictionary values.
+            </summary>
+            <value>The <see cref="T:System.Type"/> of the dictionary values.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.OverrideCreator">
+            <summary>
+            Gets or sets the function used to create the object. When set this function will override <see cref="P:Newtonsoft.Json.Serialization.JsonContract.DefaultCreator"/>.
+            </summary>
+            <value>The function used to create the object.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonDictionaryContract.HasParameterizedCreator">
+            <summary>
+            Gets a value indicating whether the creator has a parameter with the dictionary values.
+            </summary>
