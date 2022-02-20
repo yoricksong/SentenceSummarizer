@@ -9028,3 +9028,195 @@
             Always include the .NET type name when serializing.
             </summary>
         </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.Auto">
+            <summary>
+            Include the .NET type name when the type of the object being serialized is not the same as its declared type.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.CollectionUtils.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Determines whether the collection is null or empty.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns>
+            	<c>true</c> if the collection is null or empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.CollectionUtils.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the elements of the specified collection to the specified generic IList.
+            </summary>
+            <param name="initial">The list to add to.</param>
+            <param name="collection">The collection of elements to add.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(System.Object,System.Globalization.CultureInfo,System.Type)">
+            <summary>
+            Converts the value to the specified type. If the value is unable to be converted, the
+            value is checked whether it assignable to the specified type.
+            </summary>
+            <param name="initialValue">The value to convert.</param>
+            <param name="culture">The culture to use when converting.</param>
+            <param name="targetType">The type to convert or cast the value to.</param>
+            <returns>
+            The converted type. If conversion was unsuccessful, the initial value
+            is returned if assignable to the target type.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodWithResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback,Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic that returns a result
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodReturnLast(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
+            the result.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodNoResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
+            the result.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.GetRestrictions">
+            <summary>
+            Returns a Restrictions object which includes our current restrictions merged
+            with a restriction limiting our type
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.EnumUtils.GetNamesAndValues``1">
+            <summary>
+            Gets a dictionary of the names and values of an Enum type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.EnumUtils.GetNamesAndValues``1(System.Type)">
+            <summary>
+            Gets a dictionary of the names and values of an Enum type.
+            </summary>
+            <param name="enumType">The enum type to get names and values for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.GetCollectionItemType(System.Type)">
+            <summary>
+            Gets the type of the typed collection's items.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The type of the typed collection's items.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.GetMemberUnderlyingType(System.Reflection.MemberInfo)">
+            <summary>
+            Gets the member's underlying type.
+            </summary>
+            <param name="member">The member.</param>
+            <returns>The underlying type of the member.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.IsIndexedProperty(System.Reflection.MemberInfo)">
+            <summary>
+            Determines whether the member is an indexed property.
+            </summary>
+            <param name="member">The member.</param>
+            <returns>
+            	<c>true</c> if the member is an indexed property; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.IsIndexedProperty(System.Reflection.PropertyInfo)">
+            <summary>
+            Determines whether the property is an indexed property.
+            </summary>
+            <param name="property">The property.</param>
+            <returns>
+            	<c>true</c> if the property is an indexed property; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.GetMemberValue(System.Reflection.MemberInfo,System.Object)">
+            <summary>
+            Gets the member's value on the object.
+            </summary>
+            <param name="member">The member.</param>
+            <param name="target">The target object.</param>
+            <returns>The member's value on the object.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.SetMemberValue(System.Reflection.MemberInfo,System.Object,System.Object)">
+            <summary>
+            Sets the member's value on the target object.
+            </summary>
+            <param name="member">The member.</param>
+            <param name="target">The target.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.CanReadMemberValue(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Determines whether the specified MemberInfo can be read.
+            </summary>
+            <param name="member">The MemberInfo to determine whether can be read.</param>
+            /// <param name="nonPublic">if set to <c>true</c> then allow the member to be gotten non-publicly.</param>
+            <returns>
+            	<c>true</c> if the specified MemberInfo can be read; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.CanSetMemberValue(System.Reflection.MemberInfo,System.Boolean,System.Boolean)">
+            <summary>
+            Determines whether the specified MemberInfo can be set.
+            </summary>
+            <param name="member">The MemberInfo to determine whether can be set.</param>
+            <param name="nonPublic">if set to <c>true</c> then allow the member to be set non-publicly.</param>
+            <param name="canSetReadOnly">if set to <c>true</c> then allow the member to be set if read-only.</param>
+            <returns>
+            	<c>true</c> if the specified MemberInfo can be set; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Utilities.StringBuffer">
+            <summary>
+            Builds a string. Unlike StringBuilder this class lets you reuse it's internal buffer.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.StringUtils.IsWhiteSpace(System.String)">
+            <summary>
+            Determines whether the string is all white space. Empty string will return false.
+            </summary>
+            <param name="s">The string to test whether it is all white space.</param>
+            <returns>
+            	<c>true</c> if the string is all white space; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.WriteState">
+            <summary>
+            Specifies the state of the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Error">
+            <summary>
+            An exception has been thrown, which has left the <see cref="T:Newtonsoft.Json.JsonWriter"/> in an invalid state.
+            You may call the <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method to put the <see cref="T:Newtonsoft.Json.JsonWriter"/> in the <c>Closed</c> state.
+            Any other <see cref="T:Newtonsoft.Json.JsonWriter"/> method calls results in an <see cref="T:System.InvalidOperationException"/> being thrown. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Closed">
+            <summary>
+            The <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method has been called. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Object">
+            <summary>
+            An object is being written. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Array">
+            <summary>
+            A array is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Constructor">
+            <summary>
+            A constructor is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Property">
+            <summary>
+            A property is being written.
+            </summary>
