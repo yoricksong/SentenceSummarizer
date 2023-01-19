@@ -2952,4 +2952,20 @@ Mazda NNP
 asset NN
 measure NN VB
 package NN
-Assoc
+Associates NNS NNP NNPS
+proposals NNS
+sells VBZ
+trade NN VBP VB
+Dynamics NNP
+health NN
+intent NN
+intend VBP VB
+Central NNP
+engine NN
+health-care NN
+bonds NNS
+classes NNS
+indicators NNS
+plants NNS
+Just RB
+France NN
