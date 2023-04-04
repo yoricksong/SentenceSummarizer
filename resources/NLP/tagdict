@@ -4065,3 +4065,16 @@ Armstrong NNP
 sharp JJ
 ' '' POS
 & SYM CC
+% NN JJ
+$ $
+# #
+! .
+share NN VBP VB
+&MD; :
+" '' ``
+( -LRB-
+) -RRB-
+{ -LRB- 
+} -RRB-
+[ -LRB-
+] -RRB-
