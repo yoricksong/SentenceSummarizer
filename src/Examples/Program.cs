@@ -10,3 +10,10 @@ using Summarizer.Infrastructure.Dictionary;
 
 namespace Examples
 {
+    class Program
+    {
+        static void Main(string[] args)
+        { 
+        }
+    }
+}
