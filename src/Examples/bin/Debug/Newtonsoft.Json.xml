@@ -2434,3 +2434,208 @@
         <member name="M:Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken)">
             <summary>
             Sets the current token.
+            </summary>
+            <param name="newToken">The new token.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object)">
+            <summary>
+            Sets the current token and value.
+            </summary>
+            <param name="newToken">The new token.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent">
+            <summary>
+            Sets the state based on current token type.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.System#IDisposable#Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReader.Close">
+            <summary>
+            Changes the <see cref="T:Newtonsoft.Json.JsonReader.State"/> to Closed. 
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonReaderException">
+            <summary>
+            The exception thrown when an error occurs while reading JSON text.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReaderException.LineNumber">
+            <summary>
+            Gets the line number indicating where the error occurred.
+            </summary>
+            <value>The line number indicating where the error occurred.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReaderException.LinePosition">
+            <summary>
+            Gets the line position indicating where the error occurred.
+            </summary>
+            <value>The line position indicating where the error occurred.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonReaderException.Path">
+            <summary>
+            Gets the path to the JSON where the error occurred.
+            </summary>
+            <value>The path to the JSON where the error occurred.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class
+            with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonReaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReaderException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info"/> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult"/> is zero (0). </exception>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonRequiredAttribute">
+            <summary>
+            Instructs the <see cref="T:Newtonsoft.Json.JsonSerializer"/> to always serialize the member, and require the member has a value.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonSerializationException">
+            <summary>
+            The exception thrown when an error occurs during JSON serialization or deserialization.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
+            with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class
+            with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializationException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="info"/> parameter is null. </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult"/> is zero (0). </exception>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonSerializer">
+            <summary>
+            Serializes and deserializes objects into and from the JSON format.
+            The <see cref="T:Newtonsoft.Json.JsonSerializer"/> enables you to control how objects are encoded into JSON.
+            </summary>
+        </member>
+        <member name="E:Newtonsoft.Json.JsonSerializer.Error">
+            <summary>
+            Occurs when the <see cref="T:Newtonsoft.Json.JsonSerializer"/> errors during serialization and deserialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.ReferenceResolver">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Serialization.IReferenceResolver"/> used by the serializer when resolving references.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.Binder">
+            <summary>
+            Gets or sets the <see cref="T:System.Runtime.Serialization.SerializationBinder"/> used by the serializer when resolving type names.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.TraceWriter">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Serialization.ITraceWriter"/> used by the serializer when writing trace messages.
+            </summary>
+            <value>The trace writer.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.EqualityComparer">
+            <summary>
+            Gets or sets the equality comparer used by the serializer when comparing references.
+            </summary>
+            <value>The equality comparer.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.TypeNameHandling">
+            <summary>
+            Gets or sets how type name writing and reading is handled by the serializer.
+            </summary>
+            <remarks>
+            <see cref="P:Newtonsoft.Json.JsonSerializer.TypeNameHandling"/> should be used with caution when your application deserializes JSON from an external source.
+            Incoming types should be validated with a custom <see cref="T:System.Runtime.Serialization.SerializationBinder"/>
+            when deserializing with a value other than <c>TypeNameHandling.None</c>.
+            </remarks>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.TypeNameAssemblyFormat">
+            <summary>
+            Gets or sets how a type name assembly is written and resolved by the serializer.
+            </summary>
+            <value>The type name assembly format.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.PreserveReferencesHandling">
+            <summary>
+            Gets or sets how object references are preserved by the serializer.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.ReferenceLoopHandling">
+            <summary>
+            Get or set how reference loops (e.g. a class referencing itself) is handled.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.MissingMemberHandling">
+            <summary>
+            Get or set how missing members (e.g. JSON contains a property that isn't a member on the object) are handled during deserialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.NullValueHandling">
+            <summary>
+            Get or set how null values are handled during serialization and deserialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.DefaultValueHandling">
+            <summary>
+            Get or set how null default are handled during serialization and deserialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.ObjectCreationHandling">
+            <summary>
+            Gets or sets how objects are created during deserialization.
+            </summary>
+            <value>The object creation handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializer.ConstructorHandling">
+            <summary>
+            Gets or sets how constructors are used during deserialization.
