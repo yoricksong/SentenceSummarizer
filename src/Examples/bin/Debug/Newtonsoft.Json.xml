@@ -2997,3 +2997,197 @@
             <value>The context.</value>
         </member>
         <member name="P:Newtonsoft.Json.JsonSerializerSettings.DateFormatString">
+            <summary>
+            Get or set how <see cref="T:System.DateTime"/> and <see cref="T:System.DateTimeOffset"/> values are formatted when writing JSON text, and the expected date format when reading JSON text.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.MaxDepth">
+            <summary>
+            Gets or sets the maximum depth allowed when reading JSON. Reading past this depth will throw a <see cref="T:Newtonsoft.Json.JsonReaderException"/>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.Formatting">
+            <summary>
+            Indicates how JSON text output is formatted.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.DateFormatHandling">
+            <summary>
+            Get or set how dates are written to JSON text.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.DateTimeZoneHandling">
+            <summary>
+            Get or set how <see cref="T:System.DateTime"/> time zones are handling during serialization and deserialization.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.DateParseHandling">
+            <summary>
+            Get or set how date formatted strings, e.g. "\/Date(1198908717056)\/" and "2012-03-21T05:40Z", are parsed when reading JSON.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.FloatFormatHandling">
+            <summary>
+            Get or set how special floating point numbers, e.g. <see cref="F:System.Double.NaN"/>,
+            <see cref="F:System.Double.PositiveInfinity"/> and <see cref="F:System.Double.NegativeInfinity"/>,
+            are written as JSON.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.FloatParseHandling">
+            <summary>
+            Get or set how floating point numbers, e.g. 1.0 and 9.9, are parsed when reading JSON text.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.StringEscapeHandling">
+            <summary>
+            Get or set how strings are escaped when writing JSON text.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.Culture">
+            <summary>
+            Gets or sets the culture used when reading JSON. Defaults to <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonSerializerSettings.CheckAdditionalContent">
+            <summary>
+            Gets a value indicating whether there will be a check for additional content after deserializing an object.
+            </summary>
+            <value>
+            	<c>true</c> if there will be a check for additional content after deserializing an object; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializerSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializerSettings"/> class.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonTextReader">
+            <summary>
+            Represents a reader that provides fast, non-cached, forward-only access to JSON text data.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReader"/> class with the specified <see cref="T:System.IO.TextReader"/>.
+            </summary>
+            <param name="reader">The <c>TextReader</c> containing the XML data to read.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.ArrayPool">
+            <summary>
+            Gets or sets the reader's character buffer pool.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.Read">
+            <summary>
+            Reads the next JSON token from the stream.
+            </summary>
+            <returns>
+            <c>true</c> if the next token was read successfully; <c>false</c> if there are no more tokens to read.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsInt32">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDateTime">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsString">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.String"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsBytes">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Byte"/>[].
+            </summary>
+            <returns>A <see cref="T:System.Byte"/>[] or a null reference if the next JSON token is null. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsBoolean">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDateTimeOffset">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDecimal">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDouble">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.Close">
+            <summary>
+            Changes the state to closed. 
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.HasLineInfo">
+            <summary>
+            Gets a value indicating whether the class can return line information.
+            </summary>
+            <returns>
+            	<c>true</c> if LineNumber and LinePosition can be provided; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.LineNumber">
+            <summary>
+            Gets the current line number.
+            </summary>
+            <value>
+            The current line number or 0 if no line information is available (for example, HasLineInfo returns false).
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.LinePosition">
+            <summary>
+            Gets the current line position.
+            </summary>
+            <value>
+            The current line position or 0 if no line information is available (for example, HasLineInfo returns false).
+            </value>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonTextWriter">
+            <summary>
+            Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.ArrayPool">
+            <summary>
+            Gets or sets the writer's character array pool.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.Indentation">
+            <summary>
+            Gets or sets how many IndentChars to write for each level in the hierarchy when <see cref="T:Newtonsoft.Json.Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.QuoteChar">
+            <summary>
+            Gets or sets which character to use to quote attribute values.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.IndentChar">
+            <summary>
+            Gets or sets which character to use for indenting when <see cref="T:Newtonsoft.Json.Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.QuoteName">
+            <summary>
+            Gets or sets a value indicating whether object names will be surrounded with quotes.
+            </summary>
