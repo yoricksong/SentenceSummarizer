@@ -6267,3 +6267,206 @@
             Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JTokenReader"/> class.
             </summary>
             <param name="token">The token to read from.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenReader.Read">
+            <summary>
+            Reads the next JSON token from the stream.
+            </summary>
+            <returns>
+            <c>true</c> if the next token was read successfully; <c>false</c> if there are no more tokens to read.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JTokenReader.Path">
+            <summary>
+            Gets the path of the current JSON token. 
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JTokenType">
+            <summary>
+            Specifies the type of token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.None">
+            <summary>
+            No token type has been set.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Object">
+            <summary>
+            A JSON object.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Array">
+            <summary>
+            A JSON array.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Constructor">
+            <summary>
+            A JSON constructor.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Property">
+            <summary>
+            A JSON object property.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Comment">
+            <summary>
+            A comment.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Integer">
+            <summary>
+            An integer value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Float">
+            <summary>
+            A float value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.String">
+            <summary>
+            A string value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Boolean">
+            <summary>
+            A boolean value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Null">
+            <summary>
+            A null value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Undefined">
+            <summary>
+            An undefined value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Date">
+            <summary>
+            A date value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Raw">
+            <summary>
+            A raw JSON value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Bytes">
+            <summary>
+            A collection of bytes value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Guid">
+            <summary>
+            A Guid value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Uri">
+            <summary>
+            A Uri value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.TimeSpan">
+            <summary>
+            A TimeSpan value.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JTokenWriter">
+            <summary>
+            Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JTokenWriter.CurrentToken">
+            <summary>
+            Gets the <see cref="T:Newtonsoft.Json.Linq.JToken"/> at the writer's current position.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JTokenWriter.Token">
+            <summary>
+            Gets the token being writen.
+            </summary>
+            <value>The token being writen.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.#ctor(Newtonsoft.Json.Linq.JContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JTokenWriter"/> class writing to the given <see cref="T:Newtonsoft.Json.Linq.JContainer"/>.
+            </summary>
+            <param name="container">The container being written to.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JTokenWriter"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.Flush">
+            <summary>
+            Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.Close">
+            <summary>
+            Closes this stream and the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteStartObject">
+            <summary>
+            Writes the beginning of a JSON object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteStartArray">
+            <summary>
+            Writes the beginning of a JSON array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteStartConstructor(System.String)">
+            <summary>
+            Writes the start of a constructor with the given name.
+            </summary>
+            <param name="name">The name of the constructor.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteEnd(Newtonsoft.Json.JsonToken)">
+            <summary>
+            Writes the end.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WritePropertyName(System.String)">
+            <summary>
+            Writes the property name of a name/value pair on a JSON object.
+            </summary>
+            <param name="name">The name of the property.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Object)">
+            <summary>
+            Writes a <see cref="T:System.Object"/> value.
+            An error will raised if the value cannot be written as a single JSON token.
+            </summary>
+            <param name="value">The <see cref="T:System.Object"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteNull">
+            <summary>
+            Writes a null value.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteUndefined">
+            <summary>
+            Writes an undefined value.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteRaw(System.String)">
+            <summary>
+            Writes raw JSON.
+            </summary>
+            <param name="json">The raw JSON to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteComment(System.String)">
+            <summary>
+            Writes out a comment <code>/*...*/</code> containing the specified text.
+            </summary>
+            <param name="text">Text to place inside the comment.</param>
+        </member>
