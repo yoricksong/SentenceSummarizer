@@ -6470,3 +6470,181 @@
             </summary>
             <param name="text">Text to place inside the comment.</param>
         </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.String)">
+            <summary>
+            Writes a <see cref="T:System.String"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Int32)">
+            <summary>
+            Writes a <see cref="T:System.Int32"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int32"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.UInt32)">
+            <summary>
+            Writes a <see cref="T:System.UInt32"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt32"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Int64)">
+            <summary>
+            Writes a <see cref="T:System.Int64"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int64"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.UInt64)">
+            <summary>
+            Writes a <see cref="T:System.UInt64"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt64"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Single)">
+            <summary>
+            Writes a <see cref="T:System.Single"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Single"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Double)">
+            <summary>
+            Writes a <see cref="T:System.Double"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Double"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Boolean)">
+            <summary>
+            Writes a <see cref="T:System.Boolean"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Boolean"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Int16)">
+            <summary>
+            Writes a <see cref="T:System.Int16"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Int16"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.UInt16)">
+            <summary>
+            Writes a <see cref="T:System.UInt16"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.UInt16"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Char)">
+            <summary>
+            Writes a <see cref="T:System.Char"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Char"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Byte)">
+            <summary>
+            Writes a <see cref="T:System.Byte"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Byte"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.SByte)">
+            <summary>
+            Writes a <see cref="T:System.SByte"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.SByte"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Decimal)">
+            <summary>
+            Writes a <see cref="T:System.Decimal"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Decimal"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.DateTime)">
+            <summary>
+            Writes a <see cref="T:System.DateTime"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.DateTime"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.DateTimeOffset)">
+            <summary>
+            Writes a <see cref="T:System.DateTimeOffset"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.DateTimeOffset"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Byte[])">
+            <summary>
+            Writes a <see cref="T:System.Byte"/>[] value.
+            </summary>
+            <param name="value">The <see cref="T:System.Byte"/>[] value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.TimeSpan)">
+            <summary>
+            Writes a <see cref="T:System.TimeSpan"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.TimeSpan"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Guid)">
+            <summary>
+            Writes a <see cref="T:System.Guid"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Guid"/> value to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenWriter.WriteValue(System.Uri)">
+            <summary>
+            Writes a <see cref="T:System.Uri"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.Uri"/> value to write.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JValue">
+            <summary>
+            Represents a value in JSON (string, integer, date, etc).
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(Newtonsoft.Json.Linq.JValue)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class from another <see cref="T:Newtonsoft.Json.Linq.JValue"/> object.
+            </summary>
+            <param name="other">A <see cref="T:Newtonsoft.Json.Linq.JValue"/> object to copy from.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.Decimal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.Char)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.UInt64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JValue.#ctor(System.DateTimeOffset)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JValue"/> class with the given value.
+            </summary>
+            <param name="value">The value.</param>
