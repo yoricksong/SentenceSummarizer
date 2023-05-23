@@ -7835,3 +7835,195 @@
             </summary>
             <param name="objectType">Type of the object.</param>
             <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonPrimitiveContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateLinqContract(System.Type)">
+            <summary>
+            Creates a <see cref="T:Newtonsoft.Json.Serialization.JsonLinqContract"/> for the given type.
+            </summary>
+            <param name="objectType">Type of the object.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonLinqContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateISerializableContract(System.Type)">
+            <summary>
+            Creates a <see cref="T:Newtonsoft.Json.Serialization.JsonISerializableContract"/> for the given type.
+            </summary>
+            <param name="objectType">Type of the object.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonISerializableContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateDynamicContract(System.Type)">
+            <summary>
+            Creates a <see cref="T:Newtonsoft.Json.Serialization.JsonDynamicContract"/> for the given type.
+            </summary>
+            <param name="objectType">Type of the object.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonDynamicContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateStringContract(System.Type)">
+            <summary>
+            Creates a <see cref="T:Newtonsoft.Json.Serialization.JsonStringContract"/> for the given type.
+            </summary>
+            <param name="objectType">Type of the object.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonStringContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateContract(System.Type)">
+            <summary>
+            Determines which contract type is created for the given type.
+            </summary>
+            <param name="objectType">Type of the object.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Serialization.JsonContract"/> for the given type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">
+            <summary>
+            Creates properties for the given <see cref="T:Newtonsoft.Json.Serialization.JsonContract"/>.
+            </summary>
+            <param name="type">The type to create properties for.</param>
+            /// <param name="memberSerialization">The member serialization mode for the type.</param>
+            <returns>Properties for the given <see cref="T:Newtonsoft.Json.Serialization.JsonContract"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateMemberValueProvider(System.Reflection.MemberInfo)">
+            <summary>
+            Creates the <see cref="T:Newtonsoft.Json.Serialization.IValueProvider"/> used by the serializer to get and set values from a member.
+            </summary>
+            <param name="member">The member.</param>
+            <returns>The <see cref="T:Newtonsoft.Json.Serialization.IValueProvider"/> used by the serializer to get and set values from a member.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)">
+            <summary>
+            Creates a <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> for the given <see cref="T:System.Reflection.MemberInfo"/>.
+            </summary>
+            <param name="memberSerialization">The member's parent <see cref="T:Newtonsoft.Json.MemberSerialization"/>.</param>
+            <param name="member">The member to create a <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> for.</param>
+            <returns>A created <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> for the given <see cref="T:System.Reflection.MemberInfo"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.ResolvePropertyName(System.String)">
+            <summary>
+            Resolves the name of the property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>Resolved name of the property.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.ResolveDictionaryKey(System.String)">
+            <summary>
+            Resolves the key of the dictionary. By default <see cref="M:Newtonsoft.Json.Serialization.DefaultContractResolver.ResolvePropertyName(System.String)"/> is used to resolve dictionary keys.
+            </summary>
+            <param name="dictionaryKey">Key of the dictionary.</param>
+            <returns>Resolved key of the dictionary.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultContractResolver.GetResolvedPropertyName(System.String)">
+            <summary>
+            Gets the resolved name of the property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>Name of the property.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.DefaultNamingStrategy">
+            <summary>
+            The default naming strategy. Property names and dictionary keys are unchanged.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultNamingStrategy.ResolvePropertyName(System.String)">
+            <summary>
+            Resolves the specified property name.
+            </summary>
+            <param name="name">The property name to resolve.</param>
+            <returns>The resolved property name.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.DefaultSerializationBinder">
+            <summary>
+            The default serialization binder used when resolving and loading classes from type names.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultSerializationBinder.BindToType(System.String,System.String)">
+            <summary>
+            When overridden in a derived class, controls the binding of a serialized object to a type.
+            </summary>
+            <param name="assemblyName">Specifies the <see cref="T:System.Reflection.Assembly"/> name of the serialized object.</param>
+            <param name="typeName">Specifies the <see cref="T:System.Type"/> name of the serialized object.</param>
+            <returns>
+            The type of the object the formatter creates a new instance of.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DefaultSerializationBinder.BindToName(System.Type,System.String@,System.String@)">
+            <summary>
+            When overridden in a derived class, controls the binding of a serialized object to a type.
+            </summary>
+            <param name="serializedType">The type of the object the formatter creates a new instance of.</param>
+            <param name="assemblyName">Specifies the <see cref="T:System.Reflection.Assembly"/> name of the serialized object. </param>
+            <param name="typeName">Specifies the <see cref="T:System.Type"/> name of the serialized object. </param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.DiagnosticsTraceWriter">
+            <summary>
+            Represents a trace writer that writes to the application's <see cref="T:System.Diagnostics.TraceListener"/> instances.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.DiagnosticsTraceWriter.LevelFilter">
+            <summary>
+            Gets the <see cref="T:System.Diagnostics.TraceLevel"/> that will be used to filter the trace messages passed to the writer.
+            For example a filter level of <code>Info</code> will exclude <code>Verbose</code> messages and include <code>Info</code>,
+            <code>Warning</code> and <code>Error</code> messages.
+            </summary>
+            <value>
+            The <see cref="T:System.Diagnostics.TraceLevel"/> that will be used to filter the trace messages passed to the writer.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DiagnosticsTraceWriter.Trace(System.Diagnostics.TraceLevel,System.String,System.Exception)">
+            <summary>
+            Writes the specified trace level, message and optional exception.
+            </summary>
+            <param name="level">The <see cref="T:System.Diagnostics.TraceLevel"/> at which to write this trace.</param>
+            <param name="message">The trace message.</param>
+            <param name="ex">The trace exception. This parameter is optional.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.DynamicValueProvider">
+            <summary>
+            Get and set values for a <see cref="T:System.Reflection.MemberInfo"/> using dynamic methods.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DynamicValueProvider.#ctor(System.Reflection.MemberInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.DynamicValueProvider"/> class.
+            </summary>
+            <param name="memberInfo">The member info.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DynamicValueProvider.SetValue(System.Object,System.Object)">
+            <summary>
+            Sets the value.
+            </summary>
+            <param name="target">The target to set the value on.</param>
+            <param name="value">The value to set on the target.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.DynamicValueProvider.GetValue(System.Object)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="target">The target to get the value from.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ErrorContext">
+            <summary>
+            Provides information surrounding an error.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.ErrorContext.Error">
+            <summary>
+            Gets the error.
+            </summary>
+            <value>The error.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.ErrorContext.OriginalObject">
+            <summary>
+            Gets the original object that caused the error.
+            </summary>
+            <value>The original object that caused the error.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.ErrorContext.Member">
+            <summary>
+            Gets the member that caused the error.
+            </summary>
+            <value>The member that caused the error.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.ErrorContext.Path">
+            <summary>
+            Gets the path of the JSON location where the error occurred.
+            </summary>
+            <value>The path of the JSON location where the error occurred.</value>
+        </member>
