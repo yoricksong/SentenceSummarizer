@@ -8696,3 +8696,176 @@
             <value><c>true</c> if readable; otherwise, <c>false</c>.</value>
         </member>
         <member name="P:Newtonsoft.Json.Serialization.JsonProperty.Writable">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> is writable.
+            </summary>
+            <value><c>true</c> if writable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.HasMemberAttribute">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> has a member attribute.
+            </summary>
+            <value><c>true</c> if has a member attribute; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.DefaultValue">
+            <summary>
+            Gets the default value.
+            </summary>
+            <value>The default value.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.Required">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> is required.
+            </summary>
+            <value>A value indicating whether this <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> is required.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.IsReference">
+            <summary>
+            Gets or sets a value indicating whether this property preserves object references.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is reference; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.NullValueHandling">
+            <summary>
+            Gets or sets the property null value handling.
+            </summary>
+            <value>The null value handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.DefaultValueHandling">
+            <summary>
+            Gets or sets the property default value handling.
+            </summary>
+            <value>The default value handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ReferenceLoopHandling">
+            <summary>
+            Gets or sets the property reference loop handling.
+            </summary>
+            <value>The reference loop handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ObjectCreationHandling">
+            <summary>
+            Gets or sets the property object creation handling.
+            </summary>
+            <value>The object creation handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.TypeNameHandling">
+            <summary>
+            Gets or sets or sets the type name handling.
+            </summary>
+            <value>The type name handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ShouldSerialize">
+            <summary>
+            Gets or sets a predicate used to determine whether the property should be serialize.
+            </summary>
+            <value>A predicate used to determine whether the property should be serialize.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ShouldDeserialize">
+            <summary>
+            Gets or sets a predicate used to determine whether the property should be deserialized.
+            </summary>
+            <value>A predicate used to determine whether the property should be deserialized.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.GetIsSpecified">
+            <summary>
+            Gets or sets a predicate used to determine whether the property should be serialized.
+            </summary>
+            <value>A predicate used to determine whether the property should be serialized.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.SetIsSpecified">
+            <summary>
+            Gets or sets an action used to set whether the property has been deserialized.
+            </summary>
+            <value>An action used to set whether the property has been deserialized.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonProperty.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemConverter">
+            <summary>
+            Gets or sets the converter used when serializing the property's collection items.
+            </summary>
+            <value>The collection's items converter.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemIsReference">
+            <summary>
+            Gets or sets whether this property's collection items are serialized as a reference.
+            </summary>
+            <value>Whether this property's collection items are serialized as a reference.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemTypeNameHandling">
+            <summary>
+            Gets or sets the the type name handling used when serializing the property's collection items.
+            </summary>
+            <value>The collection's items type name handling.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemReferenceLoopHandling">
+            <summary>
+            Gets or sets the the reference loop handling used when serializing the property's collection items.
+            </summary>
+            <value>The collection's items reference loop handling.</value>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.JsonPropertyCollection">
+            <summary>
+            A collection of <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> objects.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonPropertyCollection.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.JsonPropertyCollection"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonPropertyCollection.GetKeyForItem(Newtonsoft.Json.Serialization.JsonProperty)">
+            <summary>
+            When implemented in a derived class, extracts the key from the specified element.
+            </summary>
+            <param name="item">The element from which to extract the key.</param>
+            <returns>The key for the specified element.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonPropertyCollection.AddProperty(Newtonsoft.Json.Serialization.JsonProperty)">
+            <summary>
+            Adds a <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> object.
+            </summary>
+            <param name="property">The property to add to the collection.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonPropertyCollection.GetClosestMatchProperty(System.String)">
+            <summary>
+            Gets the closest matching <see cref="T:Newtonsoft.Json.Serialization.JsonProperty"/> object.
+            First attempts to get an exact case match of propertyName and then
+            a case insensitive match.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>A matching property if found.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonPropertyCollection.GetProperty(System.String,System.StringComparison)">
+            <summary>
+            Gets a property by property name.
+            </summary>
+            <param name="propertyName">The name of the property to get.</param>
+            <param name="comparisonType">Type property name string comparison.</param>
+            <returns>A matching property if found.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.JsonStringContract">
+            <summary>
+            Contract details for a <see cref="T:System.Type"/> used by the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonStringContract.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.JsonStringContract"/> class.
+            </summary>
+            <param name="underlyingType">The underlying type for the contract.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.JsonTypeReflector.CreateJsonConverterInstance(System.Type,System.Object[])">
+            <summary>
+            Lookup and create an instance of the JsonConverter type described by the argument.
+            </summary>
