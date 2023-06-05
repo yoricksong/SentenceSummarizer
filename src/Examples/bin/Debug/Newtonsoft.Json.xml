@@ -8869,3 +8869,213 @@
             <summary>
             Lookup and create an instance of the JsonConverter type described by the argument.
             </summary>
+            <param name="converterType">The JsonConverter type to create.</param>
+            <param name="converterArgs">Optional arguments to pass to an initializing constructor of the JsonConverter.
+            If null, the default constructor is used.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.MemoryTraceWriter">
+            <summary>
+            Represents a trace writer that writes to memory. When the trace message limit is
+            reached then old trace messages will be removed as new messages are added.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Serialization.MemoryTraceWriter.LevelFilter">
+            <summary>
+            Gets the <see cref="T:System.Diagnostics.TraceLevel"/> that will be used to filter the trace messages passed to the writer.
+            For example a filter level of <code>Info</code> will exclude <code>Verbose</code> messages and include <code>Info</code>,
+            <code>Warning</code> and <code>Error</code> messages.
+            </summary>
+            <value>
+            The <see cref="T:System.Diagnostics.TraceLevel"/> that will be used to filter the trace messages passed to the writer.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.MemoryTraceWriter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.MemoryTraceWriter"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.MemoryTraceWriter.Trace(System.Diagnostics.TraceLevel,System.String,System.Exception)">
+            <summary>
+            Writes the specified trace level, message and optional exception.
+            </summary>
+            <param name="level">The <see cref="T:System.Diagnostics.TraceLevel"/> at which to write this trace.</param>
+            <param name="message">The trace message.</param>
+            <param name="ex">The trace exception. This parameter is optional.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.MemoryTraceWriter.GetTraceMessages">
+            <summary>
+            Returns an enumeration of the most recent trace messages.
+            </summary>
+            <returns>An enumeration of the most recent trace messages.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.MemoryTraceWriter.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> of the most recent trace messages.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> of the most recent trace messages.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ObjectConstructor`1">
+            <summary>
+            Represents a method that constructs an object.
+            </summary>
+            <typeparam name="T">The object type to create.</typeparam>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.OnErrorAttribute">
+            <summary>
+            When applied to a method, specifies that the method is called when an error occurs serializing an object.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ReflectionAttributeProvider">
+            <summary>
+            Provides methods to get attributes from a <see cref="T:System.Type"/>, <see cref="T:System.Reflection.MemberInfo"/>, <see cref="T:System.Reflection.ParameterInfo"/> or <see cref="T:System.Reflection.Assembly"/>.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionAttributeProvider.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.ReflectionAttributeProvider"/> class.
+            </summary>
+            <param name="attributeProvider">The instance to get attributes for. This parameter should be a <see cref="T:System.Type"/>, <see cref="T:System.Reflection.MemberInfo"/>, <see cref="T:System.Reflection.ParameterInfo"/> or <see cref="T:System.Reflection.Assembly"/>.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionAttributeProvider.GetAttributes(System.Boolean)">
+            <summary>
+            Returns a collection of all of the attributes, or an empty collection if there are no attributes.
+            </summary>
+            <param name="inherit">When true, look up the hierarchy chain for the inherited custom attribute.</param>
+            <returns>A collection of <see cref="T:System.Attribute"/>s, or an empty collection.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionAttributeProvider.GetAttributes(System.Type,System.Boolean)">
+            <summary>
+            Returns a collection of attributes, identified by type, or an empty collection if there are no attributes.
+            </summary>
+            <param name="attributeType">The type of the attributes.</param>
+            <param name="inherit">When true, look up the hierarchy chain for the inherited custom attribute.</param>
+            <returns>A collection of <see cref="T:System.Attribute"/>s, or an empty collection.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Serialization.ReflectionValueProvider">
+            <summary>
+            Get and set values for a <see cref="T:System.Reflection.MemberInfo"/> using reflection.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionValueProvider.#ctor(System.Reflection.MemberInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Serialization.ReflectionValueProvider"/> class.
+            </summary>
+            <param name="memberInfo">The member info.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionValueProvider.SetValue(System.Object,System.Object)">
+            <summary>
+            Sets the value.
+            </summary>
+            <param name="target">The target to set the value on.</param>
+            <param name="value">The value to set on the target.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Serialization.ReflectionValueProvider.GetValue(System.Object)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="target">The target to get the value from.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.StringEscapeHandling">
+            <summary>
+            Specifies how strings are escaped when writing JSON text.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.StringEscapeHandling.Default">
+            <summary>
+            Only control characters (e.g. newline) are escaped.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.StringEscapeHandling.EscapeNonAscii">
+            <summary>
+            All non-ASCII and control characters (e.g. newline) are escaped.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.StringEscapeHandling.EscapeHtml">
+            <summary>
+            HTML (&lt;, &gt;, &amp;, &apos;, &quot;) and control characters (e.g. newline) are escaped.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.TypeNameHandling">
+            <summary>
+            Specifies type name handling options for the <see cref="T:Newtonsoft.Json.JsonSerializer"/>.
+            </summary>
+            <remarks>
+            <see cref="T:Newtonsoft.Json.TypeNameHandling"/> should be used with caution when your application deserializes JSON from an external source.
+            Incoming types should be validated with a custom <see cref="T:System.Runtime.Serialization.SerializationBinder"/>
+            when deserializing with a value other than <c>TypeNameHandling.None</c>.
+            </remarks>
+        </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.None">
+            <summary>
+            Do not include the .NET type name when serializing types.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.Objects">
+            <summary>
+            Include the .NET type name when serializing into a JSON object structure.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.Arrays">
+            <summary>
+            Include the .NET type name when serializing into a JSON array structure.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.All">
+            <summary>
+            Always include the .NET type name when serializing.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.TypeNameHandling.Auto">
+            <summary>
+            Include the .NET type name when the type of the object being serialized is not the same as its declared type.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.CollectionUtils.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Determines whether the collection is null or empty.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns>
+            	<c>true</c> if the collection is null or empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.CollectionUtils.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the elements of the specified collection to the specified generic IList.
+            </summary>
+            <param name="initial">The list to add to.</param>
+            <param name="collection">The collection of elements to add.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(System.Object,System.Globalization.CultureInfo,System.Type)">
+            <summary>
+            Converts the value to the specified type. If the value is unable to be converted, the
+            value is checked whether it assignable to the specified type.
+            </summary>
+            <param name="initialValue">The value to convert.</param>
+            <param name="culture">The culture to use when converting.</param>
+            <param name="targetType">The type to convert or cast the value to.</param>
+            <returns>
+            The converted type. If conversion was unsuccessful, the initial value
+            is returned if assignable to the target type.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodWithResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback,Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic that returns a result
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodReturnLast(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
+            the result.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.DynamicProxyMetaObject`1.CallMethodNoResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
