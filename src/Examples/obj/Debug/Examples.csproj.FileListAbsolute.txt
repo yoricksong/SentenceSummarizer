@@ -1,1 +1,3 @@
-C
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe.config
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe
+C:\Users\guyal\Documents\Dev\SummarizationE
