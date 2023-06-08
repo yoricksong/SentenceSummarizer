@@ -2,4 +2,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.pdb
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csprojAssemblyReference.cache
-C:\Users\guyal\Documents\Dev\SummarizationEngine
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csproj.CoreCompileInputs.cache
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csproj.CopyComplete
+C:\Users\guyal\Documents\Dev\Sum
