@@ -1,3 +1,5 @@
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe.config
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.exe
-C:\Users\guyal\Documents\Dev\SummarizationE
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Examples.pdb
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csprojAssemblyReference.cache
+C:\Users\guyal\Documents\Dev\SummarizationEngine
