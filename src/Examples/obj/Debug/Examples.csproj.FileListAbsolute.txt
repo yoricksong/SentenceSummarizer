@@ -6,4 +6,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csp
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.csproj.CopyComplete
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.exe
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\obj\Debug\Examples.pdb
-C:\Users\guyal\Documents\Dev\SummarizationEngine\Examp
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\OpenNLP.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\SharpEntropy.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\HtmlAgil
