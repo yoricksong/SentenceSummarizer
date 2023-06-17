@@ -13,4 +13,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\HtmlAgilityP
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\HtmlAgilityPack.xml
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Newtonsoft.Json.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Newtonsoft.Json.xml
-C:\Users\guyal\Documents\Dev\Summ
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\SummarizationEngine.Infrastructure.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\SummarizationEngine.Infrastructure.pdb
+C:\Users
