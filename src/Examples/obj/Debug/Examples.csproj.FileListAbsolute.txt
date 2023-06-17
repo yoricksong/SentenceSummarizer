@@ -15,4 +15,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Newtonsoft.J
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Newtonsoft.Json.xml
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\SummarizationEngine.Infrastructure.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\SummarizationEngine.Infrastructure.pdb
-C:\Users
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizer.Core.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizer.Core.pdb
+C:\Users\guy
