@@ -20,4 +20,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizer.C
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.csprojAssemblyReference.cache
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.csproj.CoreCompileInputs.cache
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.exe
-C:\Users\guyal\Documents\Dev\SummarizationEngi
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.pdb
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Examples.exe.config
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src
