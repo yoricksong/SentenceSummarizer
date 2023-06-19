@@ -18,4 +18,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizatio
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizer.Core.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\Examples\bin\Debug\Summarizer.Core.pdb
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.csprojAssemblyReference.cache
-C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Exampl
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.csproj.CoreCompileInputs.cache
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.exe
+C:\Users\guyal\Documents\Dev\SummarizationEngi
