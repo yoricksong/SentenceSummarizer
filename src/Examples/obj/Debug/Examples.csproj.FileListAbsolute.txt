@@ -28,4 +28,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Summariz
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\SummarizationEngine.Infrastructure.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\OpenNLP.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\SharpEntropy.dll
-C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\D
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Summarizer.Core.pdb
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\SummarizationEngine.Infrastructure.pdb
+C:\Users\guyal\Documents\Dev\Summari
