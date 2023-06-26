@@ -32,4 +32,4 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Summariz
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\SummarizationEngine.Infrastructure.pdb
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\obj\Debug\Examples.csproj.CopyComplete
 C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Newtonsoft.Json.dll
-C:\Users\guyal\Docu
+C:\Users\guyal\Documents\Dev\SummarizationEngine\src\Examples\bin\Debug\Newtonsoft.Json.xml
