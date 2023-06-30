@@ -9,4 +9,9 @@ namespace Summarizer.Core
          * Applies the abstract intensity to the amount of keywords by %.
          * Values 0.0 - 1
          */
-        public vi
+        public virtual double AbstractIntensity { get; protected set; }
+
+        public ExtractionProvider(double abstractIntensity)
+        {
+            AbstractIntensity = abstractIntensity;
+   
