@@ -21,4 +21,7 @@ namespace Summarizer.Core
         }
 
         protected abstract Dictionary<string, double> ExtractKeywords(string statement);
-        public virtual D
+        public virtual Dictionary<string, double> Invoke(string statemnet)
+        {
+            Dictionary<string, double> frequentKeywords = ExtractKeywords(statemnet);
+            var sortedKeywords = SortKeywords(freque
