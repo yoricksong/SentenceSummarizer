@@ -14,4 +14,11 @@ namespace Summarizer.Core
         public ExtractionProvider(double abstractIntensity)
         {
             AbstractIntensity = abstractIntensity;
-   
+        }
+        public ExtractionProvider()
+        {
+            AbstractIntensity = .4;
+        }
+
+        protected abstract Dictionary<string, double> ExtractKeywords(string statement);
+        public virtual D
