@@ -40,4 +40,9 @@ namespace Summarizer.Core
         protected virtual Dictionary<string, double> SortKeywords(Dictionary<string, double> keywords)
         {
             return keywords
-             
+                .OrderBy(vec => vec.Value)
+                .Reverse()
+                .ToDictionary(vec => vec.Key, vec => vec.Value);
+        }
+    }
+}
