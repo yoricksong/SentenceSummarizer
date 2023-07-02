@@ -35,4 +35,9 @@ namespace Summarizer.Core
                 sizedKeywords.Add(kvp.Key, kvp.Value);
             }
 
-            return siz
+            return sizedKeywords;
+        }
+        protected virtual Dictionary<string, double> SortKeywords(Dictionary<string, double> keywords)
+        {
+            return keywords
+             
