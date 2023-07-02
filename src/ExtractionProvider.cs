@@ -24,4 +24,9 @@ namespace Summarizer.Core
         public virtual Dictionary<string, double> Invoke(string statemnet)
         {
             Dictionary<string, double> frequentKeywords = ExtractKeywords(statemnet);
-            var sortedKeywords = SortKeywords(freque
+            var sortedKeywords = SortKeywords(frequentKeywords);
+
+            int size = (int)((AbstractIntensity / 1) * sortedKeywords.Count);
+
+            var sizedKeywords = new Dictionary<string, double>();
+            for (int idx = 0
