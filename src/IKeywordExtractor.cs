@@ -1,3 +1,10 @@
 ﻿using System.Collections.Generic;
 
-name
+namespace Summarizer.Core
+{
+    public interface IKeywordExtractor
+    {
+        /// <summary>
+        /// Invoke with the base statement.
+        /// </summary>
+      
