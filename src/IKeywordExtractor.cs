@@ -16,4 +16,6 @@ namespace Summarizer.Core
         /// </summary>
         /// <param name="scoredStatements"></param>
         /// <returns>newly vectorized statements</returns>
-        Dict
+        Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements);
+    }
+}
