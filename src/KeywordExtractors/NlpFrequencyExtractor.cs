@@ -13,4 +13,8 @@ namespace Summarizer.Core.KeywordExtractors
         {
             _setupOmmitedTokens(ref OmittedTokens);
         }
-     
+        public NlpFrequencyExtractor(double abstractIntensity) : base(abstractIntensity)
+        {
+            _setupOmmitedTokens(ref OmittedTokens);
+        }       
+        public NlpF
