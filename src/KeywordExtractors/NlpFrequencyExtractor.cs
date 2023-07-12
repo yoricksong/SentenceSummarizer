@@ -21,3 +21,10 @@ namespace Summarizer.Core.KeywordExtractors
         {
             OmittedTokens = omittedPartsOfSpeech;
         }
+        public NlpFrequencyExtractor(IEnumerable<PosType> omittedPartsOfSpeech)
+        {
+            OmittedTokens = omittedPartsOfSpeech;
+        }
+
+
+        publi
