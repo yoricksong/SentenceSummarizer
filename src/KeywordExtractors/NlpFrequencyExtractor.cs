@@ -17,4 +17,7 @@ namespace Summarizer.Core.KeywordExtractors
         {
             _setupOmmitedTokens(ref OmittedTokens);
         }       
-        public NlpF
+        public NlpFrequencyExtractor(double abstractIntensity, IEnumerable<PosType> omittedPartsOfSpeech) : base(abstractIntensity)
+        {
+            OmittedTokens = omittedPartsOfSpeech;
+        }
