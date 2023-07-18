@@ -29,4 +29,8 @@ namespace Summarizer.Core.KeywordExtractors
 
         public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
         {
-            string statement = string.Join(",", scoredStatements.Select(x => x.Key).Select(x => x
+            string statement = string.Join(",", scoredStatements.Select(x => x.Key).Select(x => x.ToString()).ToArray());
+
+            return NLPExtractor.KeywordsByFrequency(statement, OmittedTokens, 50, scoredStatements);
+        }
+        protected override Dictionary<string,
