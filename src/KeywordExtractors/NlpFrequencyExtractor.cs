@@ -27,4 +27,6 @@ namespace Summarizer.Core.KeywordExtractors
         }
 
 
-        publi
+        public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
+        {
+            string statement = string.Join(",", scoredStatements.Select(x => x.Key).Select(x => x
