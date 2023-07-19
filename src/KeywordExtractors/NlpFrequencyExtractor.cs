@@ -37,4 +37,9 @@ namespace Summarizer.Core.KeywordExtractors
         {
             return NLPExtractor.KeywordsByFrequency(statement, OmittedTokens, 50);
         }
-        private static void _setupOmmitedToke
+        private static void _setupOmmitedTokens(ref IEnumerable<PosType> omittedTokensField)
+        {
+            omittedTokensField = new List<PosType> {
+                PosType.WTF_TWO,
+                PosType.VBP,
+                PosType.WTF
