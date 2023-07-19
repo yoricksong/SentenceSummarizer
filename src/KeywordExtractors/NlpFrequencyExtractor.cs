@@ -33,4 +33,8 @@ namespace Summarizer.Core.KeywordExtractors
 
             return NLPExtractor.KeywordsByFrequency(statement, OmittedTokens, 50, scoredStatements);
         }
-        protected override Dictionary<string,
+        protected override Dictionary<string, double> ExtractKeywords(string statement)
+        {
+            return NLPExtractor.KeywordsByFrequency(statement, OmittedTokens, 50);
+        }
+        private static void _setupOmmitedToke
