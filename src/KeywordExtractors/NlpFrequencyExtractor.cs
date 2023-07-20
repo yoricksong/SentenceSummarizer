@@ -49,4 +49,12 @@ namespace Summarizer.Core.KeywordExtractors
                 PosType.VBZ,
                 PosType.TO,
                 PosType.CC,
-       
+                PosType.VB,
+                PosType.PRP,
+                PosType.MD,
+                PosType.VBD,
+                PosType.PRPS
+            };
+        }
+    }
+}
