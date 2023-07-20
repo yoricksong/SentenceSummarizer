@@ -42,4 +42,11 @@ namespace Summarizer.Core.KeywordExtractors
             omittedTokensField = new List<PosType> {
                 PosType.WTF_TWO,
                 PosType.VBP,
-                PosType.WTF
+                PosType.WTF,
+                PosType.DT,
+                PosType.RB,
+                PosType.IN,
+                PosType.VBZ,
+                PosType.TO,
+                PosType.CC,
+       
