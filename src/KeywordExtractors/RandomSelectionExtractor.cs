@@ -19,4 +19,8 @@ namespace Summarizer.Core.KeywordExtractors
         {
             MaxKeywords = maxKeywords;
         }
-        public RandomSe
+        public RandomSelectionExtractor(double selectionLikelihood) : this()
+        {
+            SelectionLikelihood = selectionLikelihood;
+        }
+        public RandomSelectionExtractor(int maxKeywords, dou
