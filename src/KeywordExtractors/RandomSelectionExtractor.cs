@@ -12,4 +12,11 @@ namespace Summarizer.Core.KeywordExtractors
 
         public RandomSelectionExtractor()
         {
-            MaxK
+            MaxKeywords = 5;
+            SelectionLikelihood = 0.4;
+        }
+        public RandomSelectionExtractor(uint maxKeywords) : this()
+        {
+            MaxKeywords = maxKeywords;
+        }
+        public RandomSe
