@@ -23,4 +23,9 @@ namespace Summarizer.Core.KeywordExtractors
         {
             SelectionLikelihood = selectionLikelihood;
         }
-        public RandomSelectionExtractor(int maxKeywords, dou
+        public RandomSelectionExtractor(int maxKeywords, double selectionLikelihood) : this(maxKeywords)
+        {
+            SelectionLikelihood = selectionLikelihood;
+        }
+
+        public Dictionary<string, double> Invoke(str
