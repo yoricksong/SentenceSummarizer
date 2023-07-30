@@ -28,4 +28,9 @@ namespace Summarizer.Core.KeywordExtractors
             SelectionLikelihood = selectionLikelihood;
         }
 
-        public Dictionary<string, double> Invoke(str
+        public Dictionary<string, double> Invoke(string statement)
+        {
+            string[] words = statement.Split(' ');
+            var resolvedExtractor = new Dictionary<string, double>();
+
+            foreach (string word in wor
