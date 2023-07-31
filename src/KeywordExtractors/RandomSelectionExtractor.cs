@@ -33,4 +33,11 @@ namespace Summarizer.Core.KeywordExtractors
             string[] words = statement.Split(' ');
             var resolvedExtractor = new Dictionary<string, double>();
 
-            foreach (string word in wor
+            foreach (string word in words)
+            {
+                if (resolvedExtractor.Count >= MaxKeywords)
+                {
+                    break;
+                }
+
+                double seed = _random.NextDo
