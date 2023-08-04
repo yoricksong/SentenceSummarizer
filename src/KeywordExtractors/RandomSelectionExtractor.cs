@@ -40,4 +40,11 @@ namespace Summarizer.Core.KeywordExtractors
                     break;
                 }
 
-                double seed = _random.NextDo
+                double seed = _random.NextDouble();
+                if (seed <= SelectionLikelihood)
+                {
+                    resolvedExtractor.Add(word, seed);
+                }
+            }
+
+            return resolvedE
