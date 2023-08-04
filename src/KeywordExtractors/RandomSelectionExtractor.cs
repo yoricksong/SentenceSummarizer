@@ -59,4 +59,9 @@ namespace Summarizer.Core.KeywordExtractors
                     break;
                 }
 
-                double seed = _random.Next
+                double seed = _random.NextDouble();
+                if (seed <= SelectionLikelihood)
+                {
+                    generationLength++;
+
+                    scoredStatements.Remove(scoredS
