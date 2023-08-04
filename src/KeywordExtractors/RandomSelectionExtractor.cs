@@ -47,4 +47,9 @@ namespace Summarizer.Core.KeywordExtractors
                 }
             }
 
-            return resolvedE
+            return resolvedExtractor;
+        }
+        public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
+        {
+            uint generationLength = 0;
+            foreach (var scor
