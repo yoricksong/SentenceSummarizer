@@ -52,4 +52,11 @@ namespace Summarizer.Core.KeywordExtractors
         public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
         {
             uint generationLength = 0;
-            foreach (var scor
+            foreach (var scoredStatement in scoredStatements)
+            {
+                if (generationLength >= MaxKeywords)
+                {
+                    break;
+                }
+
+                double seed = _random.Next
