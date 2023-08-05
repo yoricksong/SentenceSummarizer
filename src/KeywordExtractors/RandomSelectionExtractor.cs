@@ -64,4 +64,10 @@ namespace Summarizer.Core.KeywordExtractors
                 {
                     generationLength++;
 
-                    scoredStatements.Remove(scoredS
+                    scoredStatements.Remove(scoredStatement.Key);
+                    scoredStatements.Add(scoredStatement.Key, scoredStatement.Value + seed);                   
+                }
+            }
+
+            return scoredStatements;
+  
