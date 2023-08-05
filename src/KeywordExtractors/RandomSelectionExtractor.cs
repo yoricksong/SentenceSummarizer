@@ -70,4 +70,6 @@ namespace Summarizer.Core.KeywordExtractors
             }
 
             return scoredStatements;
-  
+        }
+    }
+}
