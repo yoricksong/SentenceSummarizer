@@ -9,4 +9,8 @@ namespace Summarizer.Core.KeywordExtractors
     public class RegularFrequencyExtractor : ExtractionProvider, IKeywordExtractor
     {
         public RegularFrequencyExtractor() : base() { }
-        public RegularFrequencyExtra
+        public RegularFrequencyExtractor(double abstractIntensity) : base(abstractIntensity) { }
+
+        public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
+        {
+            var
