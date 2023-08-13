@@ -30,4 +30,11 @@ namespace Summarizer.Core.KeywordExtractors
 
         protected override Dictionary<string, double> ExtractKeywords(string statement)
         {
-            var words = stateme
+            var words = statement
+                .Split(' ')
+                .ToList();
+
+            return _scoreKeywords(words, new Dictionary<string, double>());
+        }
+
+        private Dictionary<string, double> _sc
