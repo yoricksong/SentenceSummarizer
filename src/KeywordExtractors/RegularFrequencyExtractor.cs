@@ -13,4 +13,8 @@ namespace Summarizer.Core.KeywordExtractors
 
         public Dictionary<string, double> Invoke(Dictionary<string, double> scoredStatements)
         {
-            var
+            var words = new List<string>();
+            foreach (var scoredStatement in scoredStatements)
+            {
+                string[] statementWords = scoredStatement.Key
+                    .
