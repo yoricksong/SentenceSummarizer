@@ -17,4 +17,12 @@ namespace Summarizer.Core.KeywordExtractors
             foreach (var scoredStatement in scoredStatements)
             {
                 string[] statementWords = scoredStatement.Key
-                    .
+                    .Split(' ');
+
+                foreach(string statementWord in statementWords)
+                {
+                    words.Add(statementWord);
+                }
+            }
+
+           
