@@ -25,4 +25,9 @@ namespace Summarizer.Core.KeywordExtractors
                 }
             }
 
-           
+            return _scoreKeywords(words, scoredStatements);
+        }
+
+        protected override Dictionary<string, double> ExtractKeywords(string statement)
+        {
+            var words = stateme
