@@ -47,4 +47,11 @@ namespace Summarizer.Core.KeywordExtractors
                 }
                 else
                 {
-                 
+                    scoredStatements.Add(word, 0.01);
+                }
+            }
+
+            return scoredStatements;
+        }
+    }
+}
