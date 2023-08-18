@@ -8,4 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SummarizationEngine")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany(""
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SummarizationEngine")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
