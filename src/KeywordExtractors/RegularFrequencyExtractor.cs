@@ -41,4 +41,10 @@ namespace Summarizer.Core.KeywordExtractors
         {
             foreach (string word in words)
             {
-                if (scoredS
+                if (scoredStatements.ContainsKey(word))
+                {
+                    scoredStatements[word] = scoredStatements[word] + 1.0;
+                }
+                else
+                {
+                 
