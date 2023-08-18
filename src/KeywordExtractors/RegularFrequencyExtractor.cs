@@ -37,4 +37,8 @@ namespace Summarizer.Core.KeywordExtractors
             return _scoreKeywords(words, new Dictionary<string, double>());
         }
 
-        private Dictionary<string, double> _sc
+        private Dictionary<string, double> _scoreKeywords(List<string> words, Dictionary<string, double> scoredStatements)
+        {
+            foreach (string word in words)
+            {
+                if (scoredS
