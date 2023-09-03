@@ -28,4 +28,19 @@ namespace Summarizer.Infrastructure.Nlp
         RP,
         SYM,
         TO,
-      
+        UH,
+        VB,
+        VBD,
+        VBG,
+        VBN,
+        VBP,
+        VBZ,
+        WDT,
+        WP,
+        WPS,
+        WRB,
+
+        WTF,
+        WTF_TWO,
+    }
+}
