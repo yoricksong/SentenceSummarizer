@@ -7,4 +7,8 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("SummarizationEngine.Infrastructure")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyConfigura
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SummarizationEngine.Infrastructure")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: Assembl
