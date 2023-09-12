@@ -11,4 +11,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SummarizationEngine.Infrastructure")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: Assembl
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+// Setting ComVisible to false makes the types in this assembly not visible
+// to COM components.  If you need to access a type 
