@@ -5,4 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4414CC05-48D5-476F-888E-B2F2F0E94D58}</ProjectGuid>
-    <OutputType>Li
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SummarizationEngine.Infrastructure</RootNamespace>
+    <AssemblyName>SummarizationEngine.Infrastructure
