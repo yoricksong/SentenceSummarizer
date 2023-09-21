@@ -49,4 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dictionary\DictionaryApi.cs" />
-    <Compile Include="Di
+    <Compile Include="Dictionary\Entities\DictionaryEntity.cs" />
+    <Compile Include="Dictionary\Entities\DictionaryMetaEntity.cs" />
+    <Compile Include="Nlp\Extensions.cs" />
+    <Compile Include="Nlp\NLPExtractor.cs" />
+    <Compile Includ
