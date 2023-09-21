@@ -1,0 +1,18 @@
+
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Newtonsoft.Json</name>
+    </assembly>
+    <members>
+        <member name="T:Newtonsoft.Json.Bson.BsonObjectId">
+            <summary>
+            Represents a BSON Oid (object id).
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Bson.BsonObjectId.Value">
+            <summary>
+            Gets or sets the value of the Oid.
+            </summary>
+            <value>The value of the Oid.</value>
+        </member>
