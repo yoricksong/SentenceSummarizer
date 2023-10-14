@@ -4966,3 +4966,194 @@
             <summary>
             Tries to get the <see cref="T:Newtonsoft.Json.Linq.JToken"/> with the specified property name.
             The exact property name will be searched for first and if no matching property is found then
+            the <see cref="T:System.StringComparison"/> will be used to match a property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="value">The value.</param>
+            <param name="comparison">One of the enumeration values that specifies how the strings will be compared.</param>
+            <returns><c>true</c> if a value was successfully retrieved; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.Add(System.String,Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Adds the specified property name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.Remove(System.String)">
+            <summary>
+            Removes the property with the specified name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns><c>true</c> if item was successfully removed; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.TryGetValue(System.String,Newtonsoft.Json.Linq.JToken@)">
+            <summary>
+            Tries the get value.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if a value was successfully retrieved; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1"/> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the <see cref="E:Newtonsoft.Json.Linq.JObject.PropertyChanged"/> event with the provided arguments.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.OnPropertyChanging(System.String)">
+            <summary>
+            Raises the <see cref="E:Newtonsoft.Json.Linq.JObject.PropertyChanging"/> event with the provided arguments.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetProperties">
+            <summary>
+            Returns the properties for this instance of a component.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.PropertyDescriptorCollection"/> that represents the properties for this component instance.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])">
+            <summary>
+            Returns the properties for this instance of a component using the attribute array as a filter.
+            </summary>
+            <param name="attributes">An array of type <see cref="T:System.Attribute"/> that is used as a filter.</param>
+            <returns>
+            A <see cref="T:System.ComponentModel.PropertyDescriptorCollection"/> that represents the filtered properties for this component instance.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetAttributes">
+            <summary>
+            Returns a collection of custom attributes for this instance of a component.
+            </summary>
+            <returns>
+            An <see cref="T:System.ComponentModel.AttributeCollection"/> containing the attributes for this object.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetClassName">
+            <summary>
+            Returns the class name of this instance of a component.
+            </summary>
+            <returns>
+            The class name of the object, or null if the class does not have a name.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetComponentName">
+            <summary>
+            Returns the name of this instance of a component.
+            </summary>
+            <returns>
+            The name of the object, or null if the object does not have a name.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetConverter">
+            <summary>
+            Returns a type converter for this instance of a component.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.TypeConverter"/> that is the converter for this object, or null if there is no <see cref="T:System.ComponentModel.TypeConverter"/> for this object.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent">
+            <summary>
+            Returns the default event for this instance of a component.
+            </summary>
+            <returns>
+            An <see cref="T:System.ComponentModel.EventDescriptor"/> that represents the default event for this object, or null if this object does not have events.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty">
+            <summary>
+            Returns the default property for this instance of a component.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.PropertyDescriptor"/> that represents the default property for this object, or null if this object does not have properties.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)">
+            <summary>
+            Returns an editor of the specified type for this instance of a component.
+            </summary>
+            <param name="editorBaseType">A <see cref="T:System.Type"/> that represents the editor for this object.</param>
+            <returns>
+            An <see cref="T:System.Object"/> of the specified type that is the editor for this object, or null if the editor cannot be found.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])">
+            <summary>
+            Returns the events for this instance of a component using the specified attribute array as a filter.
+            </summary>
+            <param name="attributes">An array of type <see cref="T:System.Attribute"/> that is used as a filter.</param>
+            <returns>
+            An <see cref="T:System.ComponentModel.EventDescriptorCollection"/> that represents the filtered events for this component instance.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetEvents">
+            <summary>
+            Returns the events for this instance of a component.
+            </summary>
+            <returns>
+            An <see cref="T:System.ComponentModel.EventDescriptorCollection"/> that represents the events for this component instance.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+            <summary>
+            Returns an object that contains the property described by the specified property descriptor.
+            </summary>
+            <param name="pd">A <see cref="T:System.ComponentModel.PropertyDescriptor"/> that represents the property whose owner is to be found.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that represents the owner of the specified property.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.GetMetaObject(System.Linq.Expressions.Expression)">
+            <summary>
+            Returns the <see cref="T:System.Dynamic.DynamicMetaObject"/> responsible for binding operations performed on this object.
+            </summary>
+            <param name="parameter">The expression tree representation of the runtime value.</param>
+            <returns>
+            The <see cref="T:System.Dynamic.DynamicMetaObject"/> to bind this object.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JsonMergeSettings">
+            <summary>
+            Specifies the settings used when merging JSON.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JsonMergeSettings.MergeArrayHandling">
+            <summary>
+            Gets or sets the method used when merging JSON arrays.
+            </summary>
+            <value>The method used when merging JSON arrays.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JsonMergeSettings.MergeNullValueHandling">
+            <summary>
+            Gets or sets how how null value properties are merged.
+            </summary>
+            <value>How null value properties are merged.</value>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JProperty">
+            <summary>
+            Represents a JSON property.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JProperty.ChildrenTokens">
+            <summary>
+            Gets the container's children tokens.
+            </summary>
+            <value>The container's children tokens.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JProperty.Name">
+            <summary>
+            Gets the property name.
+            </summary>
+            <value>The property name.</value>
