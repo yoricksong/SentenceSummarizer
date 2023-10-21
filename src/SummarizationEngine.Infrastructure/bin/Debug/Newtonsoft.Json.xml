@@ -6142,3 +6142,188 @@
         </member>
         <member name="M:Newtonsoft.Json.Linq.JToken.SelectTokens(System.String)">
             <summary>
+            Selects a collection of elements using a JPath expression.
+            </summary>
+            <param name="path">
+            A <see cref="T:System.String"/> that contains a JPath expression.
+            </param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> that contains the selected elements.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.SelectTokens(System.String,System.Boolean)">
+            <summary>
+            Selects a collection of elements using a JPath expression.
+            </summary>
+            <param name="path">
+            A <see cref="T:System.String"/> that contains a JPath expression.
+            </param>
+            <param name="errorWhenNoMatch">A flag to indicate whether an error should be thrown if no tokens are found when evaluating part of the expression.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> that contains the selected elements.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.GetMetaObject(System.Linq.Expressions.Expression)">
+            <summary>
+            Returns the <see cref="T:System.Dynamic.DynamicMetaObject"/> responsible for binding operations performed on this object.
+            </summary>
+            <param name="parameter">The expression tree representation of the runtime value.</param>
+            <returns>
+            The <see cref="T:System.Dynamic.DynamicMetaObject"/> to bind this object.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(System.Linq.Expressions.Expression)">
+            <summary>
+            Returns the <see cref="T:System.Dynamic.DynamicMetaObject"/> responsible for binding operations performed on this object.
+            </summary>
+            <param name="parameter">The expression tree representation of the runtime value.</param>
+            <returns>
+            The <see cref="T:System.Dynamic.DynamicMetaObject"/> to bind this object.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.DeepClone">
+            <summary>
+            Creates a new instance of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>. All child tokens are recursively cloned.
+            </summary>
+            <returns>A new instance of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.AddAnnotation(System.Object)">
+            <summary>
+            Adds an object to the annotation list of this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="annotation">The annotation to add.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.Annotation``1">
+            <summary>
+            Get the first annotation object of the specified type from this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <typeparam name="T">The type of the annotation to retrieve.</typeparam>
+            <returns>The first annotation object that matches the specified type, or <c>null</c> if no annotation is of the specified type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.Annotation(System.Type)">
+            <summary>
+            Gets the first annotation object of the specified type from this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="type">The <see cref="P:Newtonsoft.Json.Linq.JToken.Type"/> of the annotation to retrieve.</param>
+            <returns>The first annotation object that matches the specified type, or <c>null</c> if no annotation is of the specified type.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.Annotations``1">
+            <summary>
+            Gets a collection of annotations of the specified type for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <typeparam name="T">The type of the annotations to retrieve.</typeparam>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/>  that contains the annotations for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.Annotations(System.Type)">
+            <summary>
+            Gets a collection of annotations of the specified type for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="type">The <see cref="P:Newtonsoft.Json.Linq.JToken.Type"/> of the annotations to retrieve.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Object"/> that contains the annotations that match the specified type for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.RemoveAnnotations``1">
+            <summary>
+            Removes the annotations of the specified type from this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <typeparam name="T">The type of annotations to remove.</typeparam>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JToken.RemoveAnnotations(System.Type)">
+            <summary>
+            Removes the annotations of the specified type from this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="type">The <see cref="P:Newtonsoft.Json.Linq.JToken.Type"/> of annotations to remove.</param>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JTokenEqualityComparer">
+            <summary>
+            Compares tokens to determine whether they are equal.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenEqualityComparer.Equals(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Determines whether the specified objects are equal.
+            </summary>
+            <param name="x">The first object of type <see cref="T:Newtonsoft.Json.Linq.JToken"/> to compare.</param>
+            <param name="y">The second object of type <see cref="T:Newtonsoft.Json.Linq.JToken"/> to compare.</param>
+            <returns>
+            <c>true</c> if the specified objects are equal; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenEqualityComparer.GetHashCode(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Returns a hash code for the specified object.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> for which a hash code is to be returned.</param>
+            <returns>A hash code for the specified object.</returns>
+            <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj"/> is a reference type and <paramref name="obj"/> is null.</exception>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JTokenReader">
+            <summary>
+            Represents a reader that provides fast, non-cached, forward-only access to serialized JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JTokenReader.CurrentToken">
+            <summary>
+            Gets the <see cref="T:Newtonsoft.Json.Linq.JToken"/> at the reader's current position.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenReader.#ctor(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JTokenReader"/> class.
+            </summary>
+            <param name="token">The token to read from.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JTokenReader.Read">
+            <summary>
+            Reads the next JSON token from the stream.
+            </summary>
+            <returns>
+            <c>true</c> if the next token was read successfully; <c>false</c> if there are no more tokens to read.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JTokenReader.Path">
+            <summary>
+            Gets the path of the current JSON token. 
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JTokenType">
+            <summary>
+            Specifies the type of token.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.None">
+            <summary>
+            No token type has been set.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Object">
+            <summary>
+            A JSON object.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Array">
+            <summary>
+            A JSON array.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Constructor">
+            <summary>
+            A JSON constructor.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Property">
+            <summary>
+            A JSON object property.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Comment">
+            <summary>
+            A comment.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Integer">
+            <summary>
+            An integer value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.Float">
+            <summary>
+            A float value.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JTokenType.String">
