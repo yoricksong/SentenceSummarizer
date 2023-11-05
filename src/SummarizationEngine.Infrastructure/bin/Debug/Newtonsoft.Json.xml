@@ -9150,3 +9150,81 @@
             <param name="value">The value.</param>
         </member>
         <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.CanReadMemberValue(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Determines whether the specified MemberInfo can be read.
+            </summary>
+            <param name="member">The MemberInfo to determine whether can be read.</param>
+            /// <param name="nonPublic">if set to <c>true</c> then allow the member to be gotten non-publicly.</param>
+            <returns>
+            	<c>true</c> if the specified MemberInfo can be read; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.ReflectionUtils.CanSetMemberValue(System.Reflection.MemberInfo,System.Boolean,System.Boolean)">
+            <summary>
+            Determines whether the specified MemberInfo can be set.
+            </summary>
+            <param name="member">The MemberInfo to determine whether can be set.</param>
+            <param name="nonPublic">if set to <c>true</c> then allow the member to be set non-publicly.</param>
+            <param name="canSetReadOnly">if set to <c>true</c> then allow the member to be set if read-only.</param>
+            <returns>
+            	<c>true</c> if the specified MemberInfo can be set; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Utilities.StringBuffer">
+            <summary>
+            Builds a string. Unlike StringBuilder this class lets you reuse it's internal buffer.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Utilities.StringUtils.IsWhiteSpace(System.String)">
+            <summary>
+            Determines whether the string is all white space. Empty string will return false.
+            </summary>
+            <param name="s">The string to test whether it is all white space.</param>
+            <returns>
+            	<c>true</c> if the string is all white space; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.WriteState">
+            <summary>
+            Specifies the state of the <see cref="T:Newtonsoft.Json.JsonWriter"/>.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Error">
+            <summary>
+            An exception has been thrown, which has left the <see cref="T:Newtonsoft.Json.JsonWriter"/> in an invalid state.
+            You may call the <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method to put the <see cref="T:Newtonsoft.Json.JsonWriter"/> in the <c>Closed</c> state.
+            Any other <see cref="T:Newtonsoft.Json.JsonWriter"/> method calls results in an <see cref="T:System.InvalidOperationException"/> being thrown. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Closed">
+            <summary>
+            The <see cref="M:Newtonsoft.Json.JsonWriter.Close"/> method has been called. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Object">
+            <summary>
+            An object is being written. 
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Array">
+            <summary>
+            A array is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Constructor">
+            <summary>
+            A constructor is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Property">
+            <summary>
+            A property is being written.
+            </summary>
+        </member>
+        <member name="F:Newtonsoft.Json.WriteState.Start">
+            <summary>
+            A write method has not been called.
+            </summary>
+        </member>
+    </members>
+</doc>
