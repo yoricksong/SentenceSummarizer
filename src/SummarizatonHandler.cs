@@ -9,4 +9,8 @@ namespace Summarizer.Core
         public readonly bool ShouldFavorLowScores = false;
         public readonly int MaxStatementLength;
 
-        public SummarizatonHandler(List<ISummarizationLayer> summarizationLayers, int maxStatementLeng
+        public SummarizatonHandler(List<ISummarizationLayer> summarizationLayers, int maxStatementLength = 5, bool shouldFavorLowScores = false)
+        {
+            SummarizerInstances = summarizationLayers;
+            MaxStatementLength = maxStatementLength;
+            ShouldFavorLo
