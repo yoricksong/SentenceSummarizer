@@ -17,4 +17,10 @@ namespace Summarizer.Core
         }
         public SummarizatonHandler(ISummarizationLayer summarizerLayer, int maxStatementLength = 5, bool shouldFavorLowScores = false)
         {
-       
+            SummarizerInstances = new List<ISummarizationLayer>
+            {
+                summarizerLayer
+            };
+
+            MaxStatementLength = maxStatementLength;
+            ShouldFavorLo
