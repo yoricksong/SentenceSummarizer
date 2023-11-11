@@ -28,4 +28,9 @@ namespace Summarizer.Core
 
         public string Invoke(string statement)
         {
-            var currentStatementList = new Dictionary<string, do
+            var currentStatementList = new Dictionary<string, double>();
+            foreach (ISummarizationLayer layer in SummarizerInstances)
+            {
+                if (currentStatementList.Count > 1)
+                {
+                    curr
