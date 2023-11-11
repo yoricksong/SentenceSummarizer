@@ -23,4 +23,9 @@ namespace Summarizer.Core
             };
 
             MaxStatementLength = maxStatementLength;
-            ShouldFavorLo
+            ShouldFavorLowScores = shouldFavorLowScores;
+        }
+
+        public string Invoke(string statement)
+        {
+            var currentStatementList = new Dictionary<string, do
