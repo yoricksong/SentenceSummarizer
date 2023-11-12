@@ -39,4 +39,9 @@ namespace Summarizer.Core
                 {
                     currentStatementList = layer.Invoke(statement);
                 }
-        
+            }
+
+            var orderedVectors = OrderSentenceVectors(currentStatementList);
+            return ConvertScoredStatementToString(orderedVectors);
+        }
+        private Dictionary<string, do
