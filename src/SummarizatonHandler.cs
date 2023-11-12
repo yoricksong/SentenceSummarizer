@@ -33,4 +33,10 @@ namespace Summarizer.Core
             {
                 if (currentStatementList.Count > 1)
                 {
-                    curr
+                    currentStatementList = layer.Invoke(currentStatementList);
+                }
+                else
+                {
+                    currentStatementList = layer.Invoke(statement);
+                }
+        
