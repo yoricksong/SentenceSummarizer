@@ -44,4 +44,9 @@ namespace Summarizer.Core
             var orderedVectors = OrderSentenceVectors(currentStatementList);
             return ConvertScoredStatementToString(orderedVectors);
         }
-        private Dictionary<string, do
+        private Dictionary<string, double> OrderSentenceVectors(Dictionary<string, double> assignedVectors)
+        {
+            if (ShouldFavorLowScores)
+            {
+                return assignedVectors
+                    .Orde
