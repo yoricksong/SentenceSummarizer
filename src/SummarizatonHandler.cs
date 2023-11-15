@@ -55,4 +55,9 @@ namespace Summarizer.Core
             else
             {
                 return assignedVectors
-                
+                    .OrderBy(vec => vec.Value)
+                    .Reverse()
+                    .ToDictionary(vec => vec.Key, vec => vec.Value);
+            }            
+        }
+        private string Convert
