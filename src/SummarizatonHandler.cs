@@ -60,4 +60,6 @@ namespace Summarizer.Core
                     .ToDictionary(vec => vec.Key, vec => vec.Value);
             }            
         }
-        private string Convert
+        private string ConvertScoredStatementToString(Dictionary<string, double> orderedStatements)
+        {
+            int maxLength = (orderedStatements.Count < MaxStatementLength) ? orderedStatements.Count : MaxSt
