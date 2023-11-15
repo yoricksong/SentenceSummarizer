@@ -49,4 +49,10 @@ namespace Summarizer.Core
             if (ShouldFavorLowScores)
             {
                 return assignedVectors
-                    .Orde
+                    .OrderBy(vec => vec.Value)
+                    .ToDictionary(vec => vec.Key, vec => vec.Value);
+            }
+            else
+            {
+                return assignedVectors
+                
