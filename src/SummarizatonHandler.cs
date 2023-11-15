@@ -62,4 +62,9 @@ namespace Summarizer.Core
         }
         private string ConvertScoredStatementToString(Dictionary<string, double> orderedStatements)
         {
-            int maxLength = (orderedStatements.Count < MaxStatementLength) ? orderedStatements.Count : MaxSt
+            int maxLength = (orderedStatements.Count < MaxStatementLength) ? orderedStatements.Count : MaxStatementLength;
+
+            string finalStatement = "";
+            for (int idx = 0; idx <= maxLength; idx++)
+            {
+                finalStatement += string.Format("{0}
