@@ -67,4 +67,10 @@ namespace Summarizer.Core
             string finalStatement = "";
             for (int idx = 0; idx <= maxLength; idx++)
             {
-                finalStatement += string.Format("{0}
+                finalStatement += string.Format("{0} ", orderedStatements.ElementAt(idx).Key);
+            }
+
+            return finalStatement;
+        }
+    }
+}
