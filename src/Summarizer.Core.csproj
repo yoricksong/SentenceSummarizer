@@ -7,4 +7,8 @@
     <ProjectGuid>{0053BCA0-E0EA-405E-AA56-CE8B2DF8BAC2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamesp
+    <RootNamespace>Summarizer.Core</RootNamespace>
+    <AssemblyName>Summarizer.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    
