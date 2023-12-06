@@ -50,4 +50,7 @@
   <ItemGroup>
     <Compile Include="ExtractionProvider.cs" />
     <Compile Include="IKeywordExtractor.cs" />
-    <Compile Include="KeywordExtractors\NlpFreque
+    <Compile Include="KeywordExtractors\NlpFrequencyExtractor.cs" />
+    <Compile Include="KeywordExtractors\RandomSelectionExtractor.cs" />
+    <Compile Include="KeywordExtractors\RegularFrequencyExtractor.cs" />
+    <Compile Include="Summarizers\NodeProxi
