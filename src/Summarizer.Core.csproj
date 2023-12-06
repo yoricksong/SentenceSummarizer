@@ -45,4 +45,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="S
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtractionProvider.cs" />
+    <Compile Include="IKeywordExtractor.cs" />
+    <Compile Include="KeywordExtractors\NlpFreque
