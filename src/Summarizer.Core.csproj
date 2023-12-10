@@ -57,4 +57,8 @@
     <Compile Include="Summarizers\Synonymizer.cs" />
     <Compile Include="SummerizationHelper.cs" />
     <Compile Include="TextRankProvider.cs" />
-    <Com
+    <Compile Include="SummarizatonHandler.cs" />
+    <Compile Include="ISummarizer.cs" />
+    <Compile Include="Summarizers\TextRankByFrequency.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+ 
