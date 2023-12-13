@@ -68,4 +68,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SummarizationEngi
+    <ProjectReference Include="SummarizationEngine.Infrastructure\Summarizer.Infrastructure.csproj">
+      <Project>{4414cc05-48d5-476f-888e-b2f2f0e94d58}</Project>
+      <Name>Summarizer.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGr
