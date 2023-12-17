@@ -72,4 +72,6 @@
       <Project>{4414cc05-48d5-476f-888e-b2f2f0e94d58}</Project>
       <Name>Summarizer.Infrastructure</Name>
     </ProjectReference>
-  </ItemGr
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
