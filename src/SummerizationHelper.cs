@@ -1,3 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-usin
+using System.Text.RegularExpressions;
+
+namespace Summarizer.Core
+{
+    public static class SummarizationHelper
+    {
+        public static List<string> ConvertStatementToSentences(string statement
