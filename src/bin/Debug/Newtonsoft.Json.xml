@@ -3052,3 +3052,187 @@
             <summary>
             Gets a value indicating whether there will be a check for additional content after deserializing an object.
             </summary>
+            <value>
+            	<c>true</c> if there will be a check for additional content after deserializing an object; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonSerializerSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonSerializerSettings"/> class.
+            </summary>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonTextReader">
+            <summary>
+            Represents a reader that provides fast, non-cached, forward-only access to JSON text data.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.JsonReader"/> class with the specified <see cref="T:System.IO.TextReader"/>.
+            </summary>
+            <param name="reader">The <c>TextReader</c> containing the XML data to read.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.ArrayPool">
+            <summary>
+            Gets or sets the reader's character buffer pool.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.Read">
+            <summary>
+            Reads the next JSON token from the stream.
+            </summary>
+            <returns>
+            <c>true</c> if the next token was read successfully; <c>false</c> if there are no more tokens to read.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsInt32">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDateTime">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsString">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.String"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsBytes">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Byte"/>[].
+            </summary>
+            <returns>A <see cref="T:System.Byte"/>[] or a null reference if the next JSON token is null. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsBoolean">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDateTimeOffset">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDecimal">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.ReadAsDouble">
+            <summary>
+            Reads the next JSON token from the stream as a <see cref="T:System.Nullable`1"/>.
+            </summary>
+            <returns>A <see cref="T:System.Nullable`1"/>. This method will return <c>null</c> at the end of an array.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.Close">
+            <summary>
+            Changes the state to closed. 
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextReader.HasLineInfo">
+            <summary>
+            Gets a value indicating whether the class can return line information.
+            </summary>
+            <returns>
+            	<c>true</c> if LineNumber and LinePosition can be provided; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.LineNumber">
+            <summary>
+            Gets the current line number.
+            </summary>
+            <value>
+            The current line number or 0 if no line information is available (for example, HasLineInfo returns false).
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextReader.LinePosition">
+            <summary>
+            Gets the current line position.
+            </summary>
+            <value>
+            The current line position or 0 if no line information is available (for example, HasLineInfo returns false).
+            </value>
+        </member>
+        <member name="T:Newtonsoft.Json.JsonTextWriter">
+            <summary>
+            Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.ArrayPool">
+            <summary>
+            Gets or sets the writer's character array pool.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.Indentation">
+            <summary>
+            Gets or sets how many IndentChars to write for each level in the hierarchy when <see cref="T:Newtonsoft.Json.Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.QuoteChar">
+            <summary>
+            Gets or sets which character to use to quote attribute values.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.IndentChar">
+            <summary>
+            Gets or sets which character to use for indenting when <see cref="T:Newtonsoft.Json.Formatting"/> is set to <c>Formatting.Indented</c>.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.JsonTextWriter.QuoteName">
+            <summary>
+            Gets or sets a value indicating whether object names will be surrounded with quotes.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.#ctor(System.IO.TextWriter)">
+            <summary>
+            Creates an instance of the <c>JsonWriter</c> class using the specified <see cref="T:System.IO.TextWriter"/>. 
+            </summary>
+            <param name="textWriter">The <c>TextWriter</c> to write to.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.Flush">
+            <summary>
+            Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.Close">
+            <summary>
+            Closes this stream and the underlying stream.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.WriteStartObject">
+            <summary>
+            Writes the beginning of a JSON object.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.WriteStartArray">
+            <summary>
+            Writes the beginning of a JSON array.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.WriteStartConstructor(System.String)">
+            <summary>
+            Writes the start of a constructor with the given name.
+            </summary>
+            <param name="name">The name of the constructor.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.WriteEnd(Newtonsoft.Json.JsonToken)">
+            <summary>
+            Writes the specified end token.
+            </summary>
+            <param name="token">The end token to write.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.JsonTextWriter.WritePropertyName(System.String)">
+            <summary>
+            Writes the property name of a name/value pair on a JSON object.
+            </summary>
+            <param name="name">The name of the property.</param>
+        </member>
