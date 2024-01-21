@@ -4512,3 +4512,173 @@
             <summary>
             Represents a JSON constructor.
             </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JConstructor.ChildrenTokens">
+            <summary>
+            Gets the container's children tokens.
+            </summary>
+            <value>The container's children tokens.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JConstructor.Name">
+            <summary>
+            Gets or sets the name of this constructor.
+            </summary>
+            <value>The constructor name.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JConstructor.Type">
+            <summary>
+            Gets the node type for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.#ctor(Newtonsoft.Json.Linq.JConstructor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> class from another <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> object.
+            </summary>
+            <param name="other">A <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> object to copy from.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.#ctor(System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> class with the specified name and content.
+            </summary>
+            <param name="name">The constructor name.</param>
+            <param name="content">The contents of the constructor.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> class with the specified name and content.
+            </summary>
+            <param name="name">The constructor name.</param>
+            <param name="content">The contents of the constructor.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> class with the specified name.
+            </summary>
+            <param name="name">The constructor name.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.WriteTo(Newtonsoft.Json.JsonWriter,Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Writes this token to a <see cref="T:Newtonsoft.Json.JsonWriter"/>.
+            </summary>
+            <param name="writer">A <see cref="T:Newtonsoft.Json.JsonWriter"/> into which this method will write.</param>
+            <param name="converters">A collection of <see cref="T:Newtonsoft.Json.JsonConverter"/> which will be used when writing the token.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JConstructor.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:Newtonsoft.Json.Linq.JToken"/> with the specified key.
+            </summary>
+            <value>The <see cref="T:Newtonsoft.Json.Linq.JToken"/> with the specified key.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.Load(Newtonsoft.Json.JsonReader)">
+            <summary>
+            Loads an <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> from a <see cref="T:Newtonsoft.Json.JsonReader"/>. 
+            </summary>
+            <param name="reader">A <see cref="T:Newtonsoft.Json.JsonReader"/> that will be read for the content of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/>.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> that contains the JSON that was read from the specified <see cref="T:Newtonsoft.Json.JsonReader"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JConstructor.Load(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Linq.JsonLoadSettings)">
+            <summary>
+            Loads an <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> from a <see cref="T:Newtonsoft.Json.JsonReader"/>. 
+            </summary>
+            <param name="reader">A <see cref="T:Newtonsoft.Json.JsonReader"/> that will be read for the content of the <see cref="T:Newtonsoft.Json.Linq.JConstructor"/>.</param>
+            <param name="settings">The <see cref="T:Newtonsoft.Json.Linq.JsonLoadSettings"/> used to load the JSON.
+            If this is null, default load settings will be used.</param>
+            <returns>A <see cref="T:Newtonsoft.Json.Linq.JConstructor"/> that contains the JSON that was read from the specified <see cref="T:Newtonsoft.Json.JsonReader"/>.</returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JContainer">
+            <summary>
+            Represents a token that can contain other tokens.
+            </summary>
+        </member>
+        <member name="E:Newtonsoft.Json.Linq.JContainer.ListChanged">
+            <summary>
+            Occurs when the list changes or an item in the list changes.
+            </summary>
+        </member>
+        <member name="E:Newtonsoft.Json.Linq.JContainer.AddingNew">
+            <summary>
+            Occurs before an item is added to the collection.
+            </summary>
+        </member>
+        <member name="E:Newtonsoft.Json.Linq.JContainer.CollectionChanged">
+            <summary>
+            Occurs when the items list of the collection has changed, or the collection is reset.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JContainer.ChildrenTokens">
+            <summary>
+            Gets the container's children tokens.
+            </summary>
+            <value>The container's children tokens.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.OnAddingNew(System.ComponentModel.AddingNewEventArgs)">
+            <summary>
+            Raises the <see cref="E:Newtonsoft.Json.Linq.JContainer.AddingNew"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.ComponentModel.AddingNewEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.OnListChanged(System.ComponentModel.ListChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:Newtonsoft.Json.Linq.JContainer.ListChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.ComponentModel.ListChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:Newtonsoft.Json.Linq.JContainer.CollectionChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JContainer.HasValues">
+            <summary>
+            Gets a value indicating whether this token has child tokens.
+            </summary>
+            <value>
+            	<c>true</c> if this token has child values; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JContainer.First">
+            <summary>
+            Get the first child token of this token.
+            </summary>
+            <value>
+            A <see cref="T:Newtonsoft.Json.Linq.JToken"/> containing the first child token of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JContainer.Last">
+            <summary>
+            Get the last child token of this token.
+            </summary>
+            <value>
+            A <see cref="T:Newtonsoft.Json.Linq.JToken"/> containing the last child token of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Children">
+            <summary>
+            Returns a collection of the child tokens of this token, in document order.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Newtonsoft.Json.Linq.JToken"/> containing the child tokens of this <see cref="T:Newtonsoft.Json.Linq.JToken"/>, in document order.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Values``1">
+            <summary>
+            Returns a collection of the child values of this token, in document order.
+            </summary>
+            <typeparam name="T">The type to convert the values to.</typeparam>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the child values of this <see cref="T:Newtonsoft.Json.Linq.JToken"/>, in document order.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Descendants">
+            <summary>
+            Returns a collection of the descendant tokens for this token in document order.
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the descendant tokens of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
+        </member>
