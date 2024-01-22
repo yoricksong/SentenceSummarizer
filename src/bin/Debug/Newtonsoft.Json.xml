@@ -4682,3 +4682,181 @@
             </summary>
             <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the descendant tokens of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
         </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.DescendantsAndSelf">
+            <summary>
+            Returns a collection of the tokens that contain this token, and all descendant tokens of this token, in document order.
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing this token, and all the descendant tokens of the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Add(System.Object)">
+            <summary>
+            Adds the specified content as children of this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="content">The content to be added.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.AddFirst(System.Object)">
+            <summary>
+            Adds the specified content as the first children of this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="content">The content to be added.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.CreateWriter">
+            <summary>
+            Creates an <see cref="T:Newtonsoft.Json.JsonWriter"/> that can be used to add tokens to the <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <returns>An <see cref="T:Newtonsoft.Json.JsonWriter"/> that is ready to have content written to it.</returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.ReplaceAll(System.Object)">
+            <summary>
+            Replaces the children nodes of this token with the specified content.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.RemoveAll">
+            <summary>
+            Removes the child nodes from this token.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Merge(System.Object)">
+            <summary>
+            Merge the specified content into this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <param name="content">The content to be merged.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JContainer.Merge(System.Object,Newtonsoft.Json.Linq.JsonMergeSettings)">
+            <summary>
+            Merge the specified content into this <see cref="T:Newtonsoft.Json.Linq.JToken"/> using <see cref="T:Newtonsoft.Json.Linq.JsonMergeSettings"/>.
+            </summary>
+            <param name="content">The content to be merged.</param>
+            <param name="settings">The <see cref="T:Newtonsoft.Json.Linq.JsonMergeSettings"/> used to merge the content.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JContainer.Count">
+            <summary>
+            Gets the count of child JSON tokens.
+            </summary>
+            <value>The count of child JSON tokens</value>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JEnumerable`1">
+            <summary>
+            Represents a collection of <see cref="T:Newtonsoft.Json.Linq.JToken"/> objects.
+            </summary>
+            <typeparam name="T">The type of token</typeparam>
+        </member>
+        <member name="F:Newtonsoft.Json.Linq.JEnumerable`1.Empty">
+            <summary>
+            An empty collection of <see cref="T:Newtonsoft.Json.Linq.JToken"/> objects.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JEnumerable`1"/> struct.
+            </summary>
+            <param name="enumerable">The enumerable.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1"/> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator"/> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JEnumerable`1.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:Newtonsoft.Json.Linq.IJEnumerable`1"/> with the specified key.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.Equals(Newtonsoft.Json.Linq.JEnumerable{`0})">
+            <summary>
+            Determines whether the specified <see cref="T:Newtonsoft.Json.Linq.JEnumerable`1"/> is equal to this instance.
+            </summary>
+            <param name="other">The <see cref="T:Newtonsoft.Json.Linq.JEnumerable`1"/> to compare with this instance.</param>
+            <returns>
+            	<c>true</c> if the specified <see cref="T:Newtonsoft.Json.Linq.JEnumerable`1"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with this instance.</param>
+            <returns>
+            	<c>true</c> if the specified <see cref="T:System.Object"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JEnumerable`1.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:Newtonsoft.Json.Linq.JObject">
+            <summary>
+            Represents a JSON object.
+            </summary>
+            <example>
+              <code lang="cs" source="..\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" region="LinqToJsonCreateParse" title="Parsing a JSON Object from Text" />
+            </example>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JObject.ChildrenTokens">
+            <summary>
+            Gets the container's children tokens.
+            </summary>
+            <value>The container's children tokens.</value>
+        </member>
+        <member name="E:Newtonsoft.Json.Linq.JObject.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="E:Newtonsoft.Json.Linq.JObject.PropertyChanging">
+            <summary>
+            Occurs when a property value is changing.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JObject"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.#ctor(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JObject"/> class from another <see cref="T:Newtonsoft.Json.Linq.JObject"/> object.
+            </summary>
+            <param name="other">A <see cref="T:Newtonsoft.Json.Linq.JObject"/> object to copy from.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JObject"/> class with the specified content.
+            </summary>
+            <param name="content">The contents of the object.</param>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Linq.JObject"/> class with the specified content.
+            </summary>
+            <param name="content">The contents of the object.</param>
+        </member>
+        <member name="P:Newtonsoft.Json.Linq.JObject.Type">
+            <summary>
+            Gets the node type for this <see cref="T:Newtonsoft.Json.Linq.JToken"/>.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Linq.JObject.Properties">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of this object's properties.
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of this object's properties.</returns>
+        </member>
