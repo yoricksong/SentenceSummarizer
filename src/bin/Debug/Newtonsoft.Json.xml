@@ -7151,3 +7151,189 @@
         </member>
         <member name="P:Newtonsoft.Json.Schema.JsonSchema.Hidden">
             <summary>
+            Gets or sets whether the object is visible to users.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Transient">
+            <summary>
+            Gets or sets whether the object is transient.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Description">
+            <summary>
+            Gets or sets the description of the object.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Type">
+            <summary>
+            Gets or sets the types of values allowed by the object.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Pattern">
+            <summary>
+            Gets or sets the pattern.
+            </summary>
+            <value>The pattern.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.MinimumLength">
+            <summary>
+            Gets or sets the minimum length.
+            </summary>
+            <value>The minimum length.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.MaximumLength">
+            <summary>
+            Gets or sets the maximum length.
+            </summary>
+            <value>The maximum length.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.DivisibleBy">
+            <summary>
+            Gets or sets a number that the value should be divisble by.
+            </summary>
+            <value>A number that the value should be divisble by.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Minimum">
+            <summary>
+            Gets or sets the minimum.
+            </summary>
+            <value>The minimum.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Maximum">
+            <summary>
+            Gets or sets the maximum.
+            </summary>
+            <value>The maximum.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.ExclusiveMinimum">
+            <summary>
+            Gets or sets a flag indicating whether the value can not equal the number defined by the "minimum" attribute.
+            </summary>
+            <value>A flag indicating whether the value can not equal the number defined by the "minimum" attribute.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.ExclusiveMaximum">
+            <summary>
+            Gets or sets a flag indicating whether the value can not equal the number defined by the "maximum" attribute.
+            </summary>
+            <value>A flag indicating whether the value can not equal the number defined by the "maximum" attribute.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.MinimumItems">
+            <summary>
+            Gets or sets the minimum number of items.
+            </summary>
+            <value>The minimum number of items.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.MaximumItems">
+            <summary>
+            Gets or sets the maximum number of items.
+            </summary>
+            <value>The maximum number of items.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Items">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of items.
+            </summary>
+            <value>The <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of items.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.PositionalItemsValidation">
+            <summary>
+            Gets or sets a value indicating whether items in an array are validated using the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> instance at their array position from <see cref="P:Newtonsoft.Json.Schema.JsonSchema.Items"/>.
+            </summary>
+            <value>
+            	<c>true</c> if items are validated using their array position; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.AdditionalItems">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of additional items.
+            </summary>
+            <value>The <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of additional items.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.AllowAdditionalItems">
+            <summary>
+            Gets or sets a value indicating whether additional items are allowed.
+            </summary>
+            <value>
+            	<c>true</c> if additional items are allowed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.UniqueItems">
+            <summary>
+            Gets or sets whether the array items must be unique.
+            </summary>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Properties">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of properties.
+            </summary>
+            <value>The <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of properties.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.AdditionalProperties">
+            <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of additional properties.
+            </summary>
+            <value>The <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> of additional properties.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.PatternProperties">
+            <summary>
+            Gets or sets the pattern properties.
+            </summary>
+            <value>The pattern properties.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.AllowAdditionalProperties">
+            <summary>
+            Gets or sets a value indicating whether additional properties are allowed.
+            </summary>
+            <value>
+            	<c>true</c> if additional properties are allowed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Requires">
+            <summary>
+            Gets or sets the required property if this property is present.
+            </summary>
+            <value>The required property if this property is present.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Enum">
+            <summary>
+            Gets or sets the a collection of valid enum values allowed.
+            </summary>
+            <value>A collection of valid enum values allowed.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Disallow">
+            <summary>
+            Gets or sets disallowed types.
+            </summary>
+            <value>The disallow types.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Default">
+            <summary>
+            Gets or sets the default value.
+            </summary>
+            <value>The default value.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Extends">
+            <summary>
+            Gets or sets the collection of <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> that this schema extends.
+            </summary>
+            <value>The collection of <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> that this schema extends.</value>
+        </member>
+        <member name="P:Newtonsoft.Json.Schema.JsonSchema.Format">
+            <summary>
+            Gets or sets the format.
+            </summary>
+            <value>The format.</value>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.JsonSchema.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> class.
+            </summary>
+        </member>
+        <member name="M:Newtonsoft.Json.Schema.JsonSchema.Read(Newtonsoft.Json.JsonReader)">
+            <summary>
+            Reads a <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> from the specified <see cref="T:Newtonsoft.Json.JsonReader"/>.
+            </summary>
+            <param name="reader">The <see cref="T:Newtonsoft.Json.JsonReader"/> containing the JSON Schema to read.</param>
+            <returns>The <see cref="T:Newtonsoft.Json.Schema.JsonSchema"/> object representing the JSON Schema.</returns>
+        </member>
