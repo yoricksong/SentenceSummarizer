@@ -1,3 +1,5 @@
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SummarizationEngine.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SummarizationEngine.pdb
-C:\Users\guyal\Documents\Dev\SummarizationE
+C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.csprojAssemblyReference.cache
+C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.csproj.CoreCompileInputs.cache
+C:\Users\guyal\Documen
