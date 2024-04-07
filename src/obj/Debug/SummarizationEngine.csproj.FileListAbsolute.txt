@@ -1,1 +1,3 @@
-C:\Users\guyal\Documents\Dev\S
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SummarizationEngine.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SummarizationEngine.pdb
+C:\Users\guyal\Documents\Dev\SummarizationE
