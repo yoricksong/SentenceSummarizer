@@ -6,4 +6,7 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.d
 C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.pdb
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\OpenNLP.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SharpEntropy.dll
-C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngin
+C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.csproj.CopyComplete
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\Newtonsoft.Json.dll
+C:\User
