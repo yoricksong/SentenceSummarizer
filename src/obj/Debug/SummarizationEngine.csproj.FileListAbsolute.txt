@@ -9,4 +9,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SharpEntropy.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.csproj.CopyComplete
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\Newtonsoft.Json.dll
-C:\User
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.xml
+C:\Users\guyal\Documents\Dev\S
