@@ -4,4 +4,6 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.c
 C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.csproj.CoreCompileInputs.cache
 C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngine.pdb
-C:\Users\guyal\Documents\Dev\Summariz
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\OpenNLP.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\SharpEntropy.dll
+C:\Users\guyal\Documents\Dev\SummarizationEngine\obj\Debug\SummarizationEngin
