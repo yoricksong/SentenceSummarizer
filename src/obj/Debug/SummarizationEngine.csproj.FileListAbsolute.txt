@@ -11,4 +11,4 @@ C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\Newtonsoft.Json.dll
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\HtmlAgilityPack.xml
-C:\Users\guyal\Documents\Dev\S
+C:\Users\guyal\Documents\Dev\SummarizationEngine\bin\Debug\Newtonsoft.Json.xml
