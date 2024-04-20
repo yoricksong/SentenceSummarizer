@@ -12,4 +12,5 @@ For usage, import all of the SentenceSummarizer DLLs and external dependencies f
 
 ## Examples
 
-###
+### Summarizers
+The library provides several summarizers. These include the TextRank summarizer which uses the [TextRank algorithm](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emn
