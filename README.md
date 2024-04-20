@@ -4,4 +4,12 @@ SentenceSummarizer is a .Net library for high-level sentence summarization, inte
 ## Installation
 
 #### Basic Usage Installation
-For usage, import all of the SentenceSummarizer DLLs and external dependencies from the 
+For usage, import all of the SentenceSummarizer DLLs and external dependencies from the [distribute directory](./distribute) into your .net project solution. The DLLs include:
+- SentenceSummarizer.Core
+- SentenceSummarizer.Infrastructure
+- Newtonsoft.Json
+- OpenNLP
+
+## Examples
+
+###
