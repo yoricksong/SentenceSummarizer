@@ -25,4 +25,9 @@ using SentenceSummarizer.Core.Summarizers;
 // ...
 string text; // statement(s) to be summarized
 
-ISummarizationLayer textRankSummarizer = new TextRankByFreq
+ISummarizationLayer textRankSummarizer = new TextRankByFrequency();
+string summarizedText = SummarizationHandler(textRankSummarizer).Invoke(text); // summarized text.
+
+```
+
+You can find more examples in the [Examples section](#exa
