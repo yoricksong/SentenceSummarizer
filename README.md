@@ -16,4 +16,13 @@ For usage, import all of the SentenceSummarizer DLLs and external dependencies f
 The library provides several summarizers. These include the TextRank summarizer which uses the [TextRank algorithm](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf), the Synonymizer which uses a synonym-based approach, and the NodeProximity summarizer which maintains the original sentence order.
 
 #### Basic Usage
-Here's how to use the TextRank summarize
+Here's how to use the TextRank summarizer:
+
+```c#
+using SentenceSummarizer.Core;
+using SentenceSummarizer.Core.Summarizers;
+
+// ...
+string text; // statement(s) to be summarized
+
+ISummarizationLayer textRankSummarizer = new TextRankByFreq
