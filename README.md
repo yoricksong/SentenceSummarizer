@@ -30,4 +30,10 @@ string summarizedText = SummarizationHandler(textRankSummarizer).Invoke(text); /
 
 ```
 
-You can find more examples in the [Examples section](#exa
+You can find more examples in the [Examples section](#examples).
+
+## Contributing
+Your contributions are always welcome! Feel free to open a Pull Request or create an issue thread.
+
+## License
+SentenceSummarizer is [MIT licensed](./LICENSE).
